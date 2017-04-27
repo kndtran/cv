@@ -1,0 +1,938 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you find that it says                                     %%
+%%                                                                    %%
+%%                           1 of ??                                  %%
+%%                                                                    %%
+%% at the bottom of your first page, this means that the AUX file     %%
+%% was not available when you ran LaTeX on this source. Simply RERUN  %%
+%% LaTeX to get the ``??'' replaced with the number of the last page  %%
+%% of the document. The AUX file will be generated on the first run   %%
+%% of LaTeX and used on the second run to fill in all of the          %%
+%% references.                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you are getting compilation errors referring to list      %%
+%%       definitions that don't match, you may need to upgrade to a   %%
+%%       newer version of the enumitem package. Try going to:         %%
+%%                                                                    %%
+%%   http://www.ctan.org/tex-archive/macros/latex/contrib/enumitem    %%
+%%                                                                    %%
+%%       then download the enumitem.sty file from there. Place it in  %%
+%%       the same directory as your CV. So long as there are no other %%
+%%       conflicts with older packages on your system, hopefully that %%
+%%       will fix your compilation problems.                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+
+% The automated optical recognition software used to digitize resume
+% information works best with fonts that do not have serifs. This
+% command uses a sans serif font throughout. Uncomment both lines (or at
+% least the second) to restore a Roman font (i.e., a font with serifs).
+%\usepackage{times}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{comment}
+\usepackage{pdfpages}
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=1.2in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=1in,               % 1 inch margins
+            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+%\usepackage[paper=a4paper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+\usepackage[shortlabels]{enumitem}
+
+% Simpler bibsections for CV sections
+% (thanks to natbib for inspiration)
+%
+% * For lists of references with hanging indents and no numbers:
+%
+%   \begin{bibsection}
+%       \item ...
+%   \end{bibsection}
+%
+% * For numbered lists of references (with hanging indents):
+%
+%   \begin{bibenum}
+%       \item ...
+%   \end{bibenum}
+%
+%   Note that bibenum numbers continuously throughout. To reset the
+%   counter, use
+%
+%   \restartlist{bibenum}
+%
+%   at the place where you want the numbering to reset.
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newlist{bibsection}{itemize}{3}
+\setlist[bibsection]{label=,leftmargin=\bibhang}
+\newlist{bibenum}{enumerate}{3}
+\setlist[bibenum]{resume,label=[\arabic*],leftmargin={\bibhang+\widthof{[999]}}}
+\setlist*[bibsection,bibenum]{%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\let\oldendbibenum\endbibenum
+\def\endbibenum{\oldendbibenum\vspace{-.6\baselineskip}}
+\let\oldendbibsection\endbibsection
+\def\endbibsection{\oldendbibsection\vspace{-.6\baselineskip}}
+\makeatother
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% HEADING AT TOP OF CURRICULUM VITAE
+
+% The title (name) with a horizontal rule under it
+% (optional argument typesets an object right-justified across from name
+%  as well)
+%
+% Usage: \makeheading{name}
+%        OR
+%        \makeheading[right_object]{name}
+%
+% Place at top of document. It should be the first thing.
+% If ``right_object'' is provided in the square-braced optional
+% argument, it will be right justified on the same line as ``name'' at
+% the top of the CV. For example:
+%
+%       \makeheading[\emph{Curriculum vitae}]{Your Name}
+%
+% will put an emphasized ``Curriculum vitae'' at the top of the document
+% as a title. Likewise, a picture could be included:
+%
+%   \makeheading[\includegraphics[height=1.5in]{my_picutre}]{Your Name}
+%
+% the picture will be flush right across from the name.
+\newcommand{\makeheading}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+%%% SECTION HEADINGS
+
+% The section headings. Flush left in small caps down pseudo-margin.
+%
+% Usage: \section{section name}
+\renewcommand{\section}[1]{\pagebreak[3]%
+    \hyphenpenalty=10000%
+    \vspace{1.3\baselineskip}%
+    \phantomsection\addcontentsline{toc}{section}{#1}%
+    \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
+    \vspace{-\baselineskip}\par}
+
+%%% LISTS
+
+% This macro alters a list by removing some of the space that follows the list
+% (is used by lists below)
+\newcommand*\fixendlist[1]{%
+    \expandafter\let\csname preFixEndListend#1\expandafter\endcsname\csname end#1\endcsname
+    \expandafter\def\csname end#1\endcsname{\csname preFixEndListend#1\endcsname\vspace{-0.6\baselineskip}}}
+
+% These macros help ensure that items in outer-type lists do not get
+% separated from the next line by a page break
+% (they are used by lists below)
+\let\originalItem\item
+\newcommand*\fixouterlist[1]{%
+    \expandafter\let\csname preFixOuterList#1\expandafter\endcsname\csname #1\endcsname
+    \expandafter\def\csname #1\endcsname{\csname preFixOuterList#1\endcsname\let\oldItem\item\def\item{\pagebreak[2]\oldItem}}
+    \expandafter\let\csname preFixOuterListend#1\expandafter\endcsname\csname end#1\endcsname
+    \expandafter\def\csname end#1\endcsname{\let\item\oldItem\csname preFixOuterListend#1\endcsname}}
+\newcommand*\fixinnerlist[1]{%
+    \expandafter\let\csname preFixInnerList#1\expandafter\endcsname\csname #1\endcsname
+    \expandafter\def\csname #1\endcsname{\let\oldItem\item\let\item\originalItem\csname preFixInnerList#1\endcsname}
+    \expandafter\let\csname preFixInnerListend#1\expandafter\endcsname\csname end#1\endcsname
+    \expandafter\def\csname end#1\endcsname{\csname preFixInnerListend#1\endcsname\let\item\oldItem}}
+
+% An itemize-style list with lots of space between items
+%
+% Usage:
+%   \begin{outerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{outerlist}
+\newlist{outerlist}{itemize}{3}
+    \setlist[outerlist]{label=\enskip\textbullet,leftmargin=*}
+    \fixendlist{outerlist}
+    \fixouterlist{outerlist}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+%
+% Usage:
+%   \begin{lonelist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{lonelist}
+\newlist{lonelist}{itemize}{3}
+    \setlist[lonelist]{label=\enskip\textbullet,leftmargin=*,partopsep=0pt,topsep=0pt}
+    \fixendlist{lonelist}
+    \fixouterlist{lonelist}
+
+% An itemize-style list with little space between items
+%
+% Usage:
+%   \begin{innerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{innerlist}
+\newlist{innerlist}{itemize}{3}
+    \setlist[innerlist]{label=\enskip\textbullet,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt}
+    \fixinnerlist{innerlist}
+
+% An environment IDENTICAL to innerlist that has better pre-list spacing
+% when used as the first thing in a \section
+%
+% Usage:
+%   \begin{loneinnerlist}
+%       \item ...    % (or \item[] for no bullet)
+%   \end{loneinnerlist}
+\newlist{loneinnerlist}{itemize}{3}
+    \setlist[loneinnerlist]{label=\enskip\textbullet,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt}
+    \fixendlist{loneinnerlist}
+    \fixinnerlist{loneinnerlist}
+
+%%% EXTRA SPACE
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+
+%%% FORMATTING MACROS
+
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+% For \url{SOME_URL}, links SOME_URL to the url SOME_URL
+\providecommand*\url[1]{\href{#1}{#1}}
+% Same as above, but pretty-prints SOME_URL in teletype fixed-width font
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+%\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    \TeX}}
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\makeheading{CV: Mr. Khoi-Nguyen Tran}
+
+\section{Contact Information}
+
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table. Table is one row made up of three parboxes. The left
+%       parbox has address info, the middle parbox has a vertical bar,
+%       and the right parbox has phone and electronic contact
+%       information.
+%
+% MACROS: \rcollength is the width of the right column of the table
+%             (adjust it to your liking; default is 1.85in).
+%         \spacewidth is width of area between left and right boxes.
+%         \spacechar is character used to produce perforated vertical
+%             boundary between boxes.
+%
+\newlength{\rcollength}\setlength{\rcollength}{2.00in}%
+\newlength{\spacewidth}\setlength{\spacewidth}{20pt}
+\newcommand\spacechar{$ $} %|
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength-\spacewidth}@{}p{\spacewidth}@{}p{\rcollength}}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Address box
+\parbox{\textwidth-\rcollength-\spacewidth}{%
+PhD Candidate\\
+\href{http://cs.anu.edu.au/}{Research School of Computer Science}\\
+\href{http://www.anu.edu.au/}{The Australian National University}\\
+Canberra, ACT 2601, Australia}
+
+% Cheesy perforated vertical bar between boxes
+% Shorten by removing \spacechar's
+& \parbox{\spacewidth}{\centering \spacechar\\\spacechar\\\spacechar\\\spacechar\\\spacechar} &
+
+% Non-snail-mail contact information
+\parbox{\rcollength}{%
+\textit{Office:} +61-(0)2-6125-1813 \\
+\textit{Mobile:} +61-(0)424-316-544 \\
+\textit{Email:} \email{kndtran@gmail.com}\\
+\textit{WWW:} \href{http://kndtran.com/}{kndtran.com}}
+
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Date of Birth}
+
+%5 October 1987
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Citizenship}
+
+%Australian
+
+%%
+%% In modern CV's, it seems like ``Objective'' is frowned upon. Instead,
+%% incorporate it into a well-constructed cover letter. The ``More
+%% information'' can go at the end of the CV, but it should not distract
+%% from the section giving references available to contact.
+%%
+%
+% \section{Objective}
+%
+% Placement in an academic position (i.e., faculty, postdoctoral, or
+% research scientist) that allows for advanced research in distributed
+% complex adaptive systems (i.e., modeling, analysis, design, and
+% verification) with a particular focus on the control of engineered
+% agents (e.g., for communications, control, software, electronics, and
+% sustainability) and the analysis of biological phenomena (e.g.,
+% self-organization, ecological rationality)
+% \begin{innerlist}
+% \item More information and auxiliary documents can be found at\\\url{http://www.tedpavlic.com/facjobsearch/}
+% \end{innerlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Interests}
+
+\textbf{Detection of malicious activities in online environments:} data mining, machine learning, big data, knowledge generation, vandalism on Wikipedia, malicious spam emails, and current trends and issues in cybercrime.
+
+%\textbf{Knowledge generation models for online social collaborative environments:} knowledge sources, data mining, machine learning, scalable and distributed algorithms, Web based semantics, knowledge generation, citations, conflicts on the Web, real time analytics, and user interfaces.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Employment / Research}
+
+\href{http://www.anu.edu.au/}{\textbf{The Australian National University (ANU)}}, Canberra, ACT 2601, Australia
+
+\halfblankline
+
+\begin{innerlist}
+	\item Research Assistant. Casual. \hfill {November 2014 -- Current}
+	\item[] \href{http://regnet.anu.edu.au/content/anu-cybercrime-observatory}{ANU Cybercrime Observatory}
+	\item[] \href{http://regnet.anu.edu.au/}{Regulatory Institutions Network (RegNet)}
+	\begin{innerlist}
+		\item[$-$] Project: ``Developing a Cybercrime Course for Undergraduate/Masters Students''
+		\item[$-$] Supervisor:
+			\href{https://researchers.anu.edu.au/researchers/broadhurst-r}%
+				{Professor Roderic Broadhurst}
+		\item[$-$] Assisting in developing informative and instructional learning materials, and problem based learning exercises for tutorials.
+		\item[$-$] Identifying and compiling appropriate reading material for a reading brick.
+    \end{innerlist}
+	
+	\halfblankline
+	
+	\item Research Assistant. Casual. \hfill {March 2013 -- June 2014}
+	\item[] \href{http://regnet.anu.edu.au/content/anu-cybercrime-observatory}{ANU Cybercrime Observatory}
+	\item[] \href{http://regnet.anu.edu.au/}{Regulatory Institutions Network (RegNet)}
+	\begin{innerlist}
+		\item[$-$] Project: ``Tracking Cybercrime Activities in Australia''
+		\item[$-$] Supervisors:
+			\href{http://mamounalazab.com/}%
+				{Dr. Mamoun Alazab},
+			\href{https://researchers.anu.edu.au/researchers/broadhurst-r}%
+				{Professor Roderic Broadhurst}
+		%\item[$-$] Negotiated and obtained three real-world email data sets; 12 million+ emails.
+		\item[$-$] Led research into detecting spam emails with malicious attachments or URLs.
+		\item[$-$] Processed 1 million+ attachments and 21 million+ URLs from all emails.
+		\item[$-$] Developed novel detection technique for malicious content based on email content.
+		\item[$-$] (See page 3.) Published~\ref{pub:tran2013a} in the Australasian Data Mining Conference, a top-tier national data mining conference. 
+    \end{innerlist}
+	
+	\halfblankline
+	
+	\item Research Assistant. Full-time. \hfill {January 2011 -- January 2012}
+	\item[] \href{http://cs.anu.edu.au/}{Research School of Computer Science}
+	\begin{innerlist}
+		\item[$-$] Project (funded by Google): ``Preference Elicitation for Social Recommendation''
+		\item[$-$] Co-investigator: Joseph Noel
+		\item[$-$] Supervisors:
+                \href{http://cs.anu.edu.au/people/Peter.Christen/}%
+                     {Assoc. Prof. Peter Christen},
+                \href{http://users.cecs.anu.edu.au/~ssanner/}%
+                     {Dr. Scott Sanner},
+                \href{http://cecs.anu.edu.au/~xlx/}%
+                     {Dr. Lexing Xie},
+                \href{http://users.cecs.anu.edu.au/~u4882938/}%
+                     {Dr. Edwin Bonilla}
+		\item[$-$] Led development of Facebook app (\href{http://linkr.anu.edu.au}{LinkR}) to collect user data for research on collaborative filtering for recommendation.
+		\item[$-$] Recruited and supported over 200 participants in a 5 month user study.
+		\item[$-$] Collected usage data from over 37,000 Facebook users and their friends.
+		\item[$-$] (See page 3.) Published~\ref{pub:noel2012} novel recommendation algorithms and evaluation on real-world data in World Wide Web Conference, a top-tier international computer science conference.
+	\end{innerlist}
+	
+	\halfblankline
+	
+	\item Summer Research Scholar. Full-time. \hfill {November 2009 -- February 2010}
+	\begin{innerlist}
+		\item[$-$] Project: ``Tracking Citation Counts from Online Sources
+		\item[$-$] Supervisor:
+                \href{http://cs.anu.edu.au/people/Peter.Christen/}%
+                     {Assoc. Prof. Peter Christen}
+		\item[$-$] Developed a Firefox plugin for tracking changes in citation counts of authors from Google Scholar.
+	\end{innerlist}
+\end{innerlist}
+
+%\halfblankline
+
+%\halfblankline
+
+%\halfblankline
+
+%\href{http://www.csiro.au}{\textbf{CSIRO}}, Canberra, ACT 2601, Australia
+
+%\halfblankline
+
+% \begin{innerlist}
+	% \item Summer Research Scholar. Full-time. \hfill {November 2008 -- February 2009}
+	% \item[] \href{http://research.ict.csiro.au/}{ICT Centre}
+	% \begin{innerlist}
+		% \item[$-$] Project: ``Reasoning about Sensors and Compositions''
+		% \item[$-$] Supervisors:
+			% \href{http://www.ict.csiro.au/staff/michael.compton/}%
+				% {Dr. Michael Compton}
+		% \item[$-$] Led development of a sensor ontology that covers the expressiveness of existing sensor ontologies being used for specific purposes.
+		% \item[$-$] This initial work led to 2 publications~\ref{pub:tran2009a}~\ref{pub:tran2009b}.
+    % \end{innerlist}
+% \end{innerlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+\section{Employment / Teaching}
+
+\href{http://www.anu.edu.au/}{\textbf{The Australian National University (ANU)}}, Canberra, ACT 2601, Australia
+
+\begin{outerlist}
+\item \textit{Teaching Assistant} \hfill{July 2008 -- July 2012}\\
+	\begin{innerlist}
+		\item[$-$] Masters Course: Algorithms for Data Mining; Semester 1 of 2010, 2011, 2012.
+		\item[$-$] Course: Advanced Databases and Data Mining; Semester 1 of 2009.
+		\item[$-$] Course: Algorithms; Semester 2 of 2008.
+		\item[$-$] Course: Concurrent and Distributed Systems; Semester 2 of 2008
+	\end{innerlist}
+\end{outerlist}
+
+\begin{comment}
+\item[] \textit{Teaching Assistant} \hfill{July 2008 to July 2012}\\
+    \begin{innerlist}
+        \item Lab Instructor and Grader for COMP8400: Algorithms for Data Mining
+        \begin{innerlist}
+            \item[$-$] Semester 1 in years 2010, 2011, and 2012.
+            \item[$-$] Supervision of 1 hour laboratories, where students explored data mining tools, algorithms, and concepts.
+        \end{innerlist}
+
+        \halfblankline
+
+        \item Lab Instructor for COMP3420: Advanced Databases and Data Mining
+        \begin{innerlist}
+            \item[$-$] Semester 1 in year 2009
+            \item[$-$] Supervision of 1 hour laboratories. Students explored data mining tools and concepts.
+        \end{innerlist}
+
+        \halfblankline
+
+        \item Lab Instructor for COMP3600: Algorithms
+        \begin{innerlist}
+            \item[$-$] Semester 2 in year 2008
+            \item[$-$] Responsible for 1 hour tutorial and supervision of 1 hour laboratory. Introduced students to various sorting and searching algorithms, and helping them implement those algorithms.
+        \end{innerlist}
+
+        \item Lab Instructor for COMP2310: Concurrent and Distributed Systems
+        \begin{innerlist}
+            \item[$-$] Semester 2 in year 2008
+            \item[$-$] Responsible for 1 hour tutorial and supervision of 1 hour laboratory. Introduced students to concurrent algorithms and concepts, and implementation of algorithms.
+        \end{innerlist}
+    \end{innerlist}
+\end{outerlist}
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\href{http://www.anu.edu.au/}{\textbf{The Australian National University (ANU)}}, Canberra, ACT 2601, Australia
+
+%\textbf{Current statement of results attached. An academic transcript is available on request.} From the \href{http://www.anu.edu.au/sas/seap/examinationsandassessment/5.5.php}{ANU Grade Scale}: Mark is out of 100; HD is High Distinction; D is Distinction; H1 is First Class Honours; KU is continuing course; and RC is Research Continuing.
+
+\begin{outerlist}
+\item Ph.D. (Awaiting thesis examinations results.) \hfill{(Thesis submitted in) October 2014}
+	\begin{innerlist}
+		%\item Thesis Topic: \emph{Design and Analysis of Optimal Task-Processing Agents}
+		\item[$-$] Area of Study: Machine learning and its applications
+		\item[$-$] Thesis Title: \emph{Detecting Vandalism on Wikipedia across Multiple Languages}
+		%\item Candidacy: \emph{Research Problems in Distributed Control for Energy Systems}
+		\item[$-$] Supervisors:
+			\href{http://cs.anu.edu.au/people/Peter.Christen/}{Assoc. Prof. Peter Christen},
+			\href{http://users.cecs.anu.edu.au/~ssanner/}{Dr. Scott Sanner},
+			\href{http://users.cecs.anu.edu.au/~xlx/}{Dr. Lexing Xie}
+		\item[$-$] (See page 3.) Publications:~\ref{pub:tran2015},~\ref{pub:tran2014},~\ref{pub:tran2013a},~\ref{pub:tran2013b},~\ref{pub:tran2013d}.
+	\end{innerlist}
+
+\item Bachelor of Computer Science, with First Class Honours \hfill{December 2009}
+	\begin{innerlist}
+		\item[$-$] GPA: 3.75/4; Overall course average of High Distinction.
+		\item[$-$] Honours Thesis Topic: \emph{Semantic Sensor Composition}
+		\begin{innerlist}
+			\item[$*$] Supervisor: \href{http://www.ict.csiro.au/staff/michael.compton/}{Dr. Michael Compton}
+			\item[$*$] 2 publications.%(See page 3.) Publications:~\ref{pub:tran2009a}~\ref{pub:tran2009b},~\ref{pub:tran2009d}
+		\end{innerlist}
+		\item[$-$] Individual Research Projects: \emph{Detecting Network Anomalies}
+		\begin{innerlist}
+			\item[$*$] Supervisor: \href{http://people.cecs.anu.edu.au/user/1052}{Dr. Huidong (Warren) Jin}
+			\item[$*$] 2 publications.%:~\ref{pub:tran2010},~\ref{pub:tran2009c}
+		\end{innerlist}
+	\end{innerlist}
+\end{outerlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+Languages:
+%
+\begin{innerlist}
+    \item Experienced: Python, UNIX shell scripting, PHP, JavaScript, SQL
+	\item Familiar: Haskell, R, C, Java, \Matlab, C\#
+\end{innerlist}
+
+\halfblankline
+
+Software:
+%
+\begin{innerlist}
+    \item Experienced: Scikit-learn (Python machine learning library), \LaTeX , JQuery, MySQL
+	\item Familiar: Eclipse, Apache, SVN/Git, Ubuntu Linux, Microsoft Windows XP/7/8, Microsoft Word/Excel/Powerpoint
+\end{innerlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Personal \\ Projects}
+
+\href{http://dmm.anu.edu.au/geco/}{\textbf{Online Personal Data Generator and Corruptor (GeCo)}}
+
+\halfblankline
+
+\begin{innerlist}
+	\item Personal project. Full-time. \hfill {May 2013}
+	\item[] \href{http://cs.anu.edu.au/}{Research School of Computer Science}
+	\begin{innerlist}
+		\item[$-$] Project: ``Synthetic Data Generation and Corruption''
+		\item[$-$] Supervisors:
+			\href{http://cs.anu.edu.au/people/Peter.Christen/}%
+				{Assoc. Prof. Peter Christen},
+		\item[$-$] Led development of a user-friendly Web interface for a prototype data generator and corruptor.
+		\item[$-$] (See page 3.) Published as a demo in a top-tier international computer science conference~\ref{pub:tran2013c}.
+    \end{innerlist}
+\end{innerlist}
+
+\halfblankline
+
+\href{http://www.imaginecup.com/}{\textbf{Microsoft Imagine Cup 2011}}
+
+\halfblankline
+
+\begin{innerlist}
+	\item Personal project. Free-time. \hfill {February 2011 -- June 2011}
+	\begin{innerlist}
+		\item[$-$] Project: ``Disaster Coordination using Social Networks''
+		\item[$-$] Led a team of 2 developers and an artist to develop a prototype software system for the competition. We developed a mobile app for Windows Phone 7 (in C\# using the Windows Phone developer tools) and a web app (in C\# using .NET and Silverlight).
+		\item[$-$] First and second round Australian finalist. Placed 4th at the Australian finals.
+    \end{innerlist}
+\end{innerlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Add a little space to nudge next ``Conference Publications'' marginpar
+% down to make room for tall ``Submitted Journal Publications''
+% marginpar. If there are enough submitted journal publications, this
+% space will not be needed (and should be removed).
+%\vspace{0.1in}
+
+\section{Selected Publications}
+
+\textbf{Google Scholar Profile:}
+
+\url{http://scholar.google.com.au/citations?user=ihFcT5QAAAAJ}
+
+\mbox{}
+
+\textbf{ResearchGate Profile:}
+
+\url{https://www.researchgate.net/profile/Khoi\_Nguyen\_Tran}
+
+\mbox{}
+
+\begin{bibenum}
+	\item\label{pub:tran2015} \textbf{Khoi-Nguyen Tran}, Peter Christen, Scott Sanner, and Lexing Xie. \textit{Context-aware Detection of Sneaky Vandalism on Wikipedia across Multiple Languages}. In Proceedings of the 19th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), Ho Chi Minh City, Vietnam, 2015.
+	
+	\item\label{pub:tran2014} \textbf{Khoi-Nguyen Tran} and Peter Christen. \textit{Cross-Language Learning from Bots and Users to detect Vandalism on Wikipedia}. IEEE Transactions on Knowledge and Data Engineering (TKDE), 2014.
+	
+	\item\label{pub:tran2013a} \textbf{Khoi-Nguyen Tran}, Mamoun Alazab, and Roderic Broadhurst. \textit{Towards a Feature Rich Model for Predicting Spam Emails containing Malicious Attachments and URLs}. In Proceedings of the 11th Australasian Data Mining Conference (AusDM), Canberra, Australia, 2013.
+	
+	\item\label{pub:tran2013b} \textbf{Khoi-Nguyen Tran} and Peter Christen. \textit{Identifying Multilingual Wikipedia Articles based on Cross-Language Similarity and Activity}. In Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Poster, San Francisco, USA, 2013.
+	
+	\item\label{pub:tran2013c} \textbf{Khoi-Nguyen Tran}, Dinusha Vatsalan, and Peter Christen. \textit{GeCo - An Online Personal data Generator and Corruptor}. In Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Demo, San Francisco, USA, 2013.
+	
+	\item\label{pub:tran2013d} \textbf{Khoi-Nguyen Tran} and Peter Christen. \textit{Cross-Language Prediction of Vandalism on Wikipedia Using Article Views and Revisions}. In Proceedings of the 17th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), Gold Coast, Australia, 2013.
+	
+	\item\label{pub:noel2012} Joseph Noel, Scott Sanner, \textbf{Khoi-Nguyen Tran}, Peter Christen, Lexing Xie, Edwin V. Bonilla, Ehsan Abbasnejad, and Nicolas Della Penna. \textit{New Objective Functions for Social Collaborative Filtering}. In Proceedings of the 21st International World Wide Web Conference (WWW), Lyon, France, 2012.
+
+\end{bibenum}
+
+
+\section{Other Publications}
+
+\begin{bibenum}
+	\item\label{pub:tran2009d} \textbf{Khoi-Nguyen Tran}. \textit{Semantic Sensor Composition}. Honours Thesis. The Australian National University, 2009.
+\end{bibenum}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Academic Awards}
+
+\href{http://www.anu.edu.au/}{The Australian National University}
+\begin{innerlist}
+	\item CSIRO ICT Scholarship for Computer Science, 2006--2009
+	\item Boyapati Prize for 2nd Year Computer Science and Mathematics, 2007
+	\begin{innerlist}
+		\item[$-$] Awarded to students obtaining a High Distinction (highest grade possible) in two computer science and two mathematics courses in their 2nd year of study.
+	\end{innerlist}
+	\item Dean's List, 2009
+\end{innerlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+\section{Memberships}
+
+\textbf{Professional}
+\begin{innerlist}
+    \item Institute for Electrical and Electronics Engineers~(IEEE), Member, 2008--present
+	\item Australian Computer Society~(ACS), Member, 2008--present
+\end{innerlist}
+
+\halfblankline
+
+\textbf{Student} (current at ANU)
+\begin{innerlist}
+    \item ANU Computer Science Students Association (ANU CSSA), Member, 2007--present
+	\item ANU Engineering Students' Association (ANU ESA), Member, 2007--present
+	\item ANU Black Hole Society, Member, 2008--present
+	%\item ANU Spanish Club, Member, 2013
+	%\item ANU Mandarin Mentoring, 2011--2012
+\end{innerlist}
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Service}
+
+\href{http://anucssa.com}{ANU Computer Science Students' Association}
+\begin{innerlist}
+    \item Volunteer, 2007--2010
+	%\begin{innerlist}
+	%	\item[$-$] Responsibilities: Cooking at BBQs, collecting membership, advertising
+	%\end{innerlist}
+	\item President, 2011--2012
+	\begin{innerlist}
+		\item[$-$] Total membership for 2011: 220+, for 2012: 300+.
+		%\item[$-$] Responsibilities
+		%\begin{innerlist}
+		%	\item[$*$] Direct: writing reports for the Research School of Computer Science, calling committee meetings, organising events, programming tasks (Android membership sign up application, Web site setup and management), managing collaboration with other student societies, purchasing of items for events, and many more.
+		%	\item[$*$] Indirect: membership recruitment, managing paperwork (affiliation, security, financial reports, etc), advertising material, organisation of some events, external events (e.g. Python group meetings, careers events such as Google, Microsoft, and others by the ANU Careers Centre), competitions, and others.
+		%\end{innerlist}
+		\item[$-$] Notable events: 20+ BBQs, 4 Epic Games Nights, 8 technical talks (incl. Kinect development workshop, and \LaTeX{} workshops), 4 software installation events, and 2 membership recruitments.
+		\item[$-$] Winner of Event of the Year in 2012 for the Epic Games Night.
+		\item[$-$] Runner Up for Club of the Year in 2012.
+	\end{innerlist}
+\end{innerlist}
+
+\halfblankline
+
+Miscellaneous
+%\href{http://anucssa.com}{Conferences}
+\begin{innerlist}
+    \item Volunteer, 2013, \href{http://ausdm.togaware.com/}{The Australasian Data Mining Conference}
+    \item Volunteer, 2011, \href{http://2011.osdc.com.au/}{Open Source Developers' Conference}
+    \item \href{http://www.microsoftstudentpartners.com/}{Microsoft Student Ambassador} at the ANU, 2011--2012
+\end{innerlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{General Interests}
+
+% \begin{innerlist}
+	% \item Computer games, card games, board games, cycling, hiking.
+	% \item Cooking, baking bread, growing food.
+	% \item Learning human languages (French, Mandarin Chinese, Spanish, Russian, and German).
+% \end{innerlist}
+
+%Computer Games
+%\begin{innerlist}
+%	\item Counter-Strike 1.6/Source/G.O. (FPS) - Nugget - Over 10,000 hours of play in total.
+%	\item War Thunder (Open Beta) (MMO) - nugget000. Over 200 hours of play.
+%	\item Planetside 2 (MMO FPS) - \href{https://players.planetside2.com/#!/5428011263312488129}{nugget00} - Over 800 hours of play.
+%	\item MechWarrior Online (Open Beta) (MMO) - Nugget00 - Over 100 hours of play.
+%	\item Starcraft 2 (RTS) - Nugget - Over 50 hours of play.
+%\end{innerlist}
+
+%Other
+%\begin{innerlist}
+%	\item Computer games, card games, board games.
+%	\item Learning human languages (French, Mandarin Chinese, Spanish, Russian, and German).
+%	\item Kickboxing, badminton, paintball, and growing food.
+%\end{innerlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{References Available to Contact}
+
+\href
+{http://cs.anu.edu.au/people/Peter.Christen/}
+{\textbf{A. Prof.~Peter~Christen}}
+(email:~\href{mailto:peter.christen@anu.edu.au}{peter.christen@anu.edu.au})
+%
+\begin{innerlist}
+	\item Associate Professor,
+		\href{http://cs.anu.edu.au/}{Research School of Computer Science}
+	\item The Australian National University, Canberra, ACT 2601, Australia
+    \item \emph{Assoc. Prof.~Christen is my graduate supervisor and panel chair for my PhD candidacy.}
+\end{innerlist}
+
+\halfblankline
+
+\href
+{http://regnet.anu.edu.au/people/professor-roderic-broadhurst}
+{\textbf{Prof.~Roderic~Broadhurst}}
+(email:~\href{mailto:roderic.broadhurst@anu.edu.au}{roderic.broadhurst@anu.edu.au})
+%
+\begin{innerlist}
+	\item Professor,
+		\href{http://cass.anu.edu.au/}{College of Arts and Social Science}
+	\item The Australian National University, Canberra, ACT 2601, Australia
+    \item \emph{Prof.~Broadhurst is my supervisor at the ANU Cybercrime Observatory for the project ``Developing a Cybercrime Course for Undergraduate/Masters Students''.}
+\end{innerlist}
+
+\halfblankline
+
+\href
+{http://regnet.anu.edu.au/people/dr-mamoun-alazab}
+{\textbf{Dr.~Mamoun~Alazab}}
+(email:~\href{mailto:mamoun.alazab@anu.edu.au}{mamoun.alazab@anu.edu.au})
+%
+\begin{innerlist}
+	\item Research Associate,
+		\href{http://cass.anu.edu.au/}{College of Arts and Social Science}
+	\item The Australian National University, Canberra, ACT 2601, Australia
+    \item \emph{Dr.~Alazab was my main supervisor for the project named ``Tracking Cybercrime Activities in Australia''.}
+\end{innerlist}
+
+% \halfblankline
+
+% \href
+% {http://users.cecs.anu.edu.au/~ssanner/}
+% {\textbf{Dr.~Scott~Sanner}}
+% (email:~\href{mailto:scott.sanner@nicta.com.au}{scott.sanner@nicta.com.au}; phone:~+61-2-6267-6330)
+% \begin{innerlist}
+	% \item Senior Researcher,
+		% \href{http://sml.nicta.com.au/}{Statistical Machine Learning Group},
+		% \href{http://nicta.com.au/}{NICTA}
+	% \item Tower A, 7 London Circuit, Canberra, ACT 2601, Australia
+    % \item \emph{Dr.~Sanner is my graduate co-supervisor.}
+% \end{innerlist}
+
+% \halfblankline
+
+% \href
+% {http://users.cecs.anu.edu.au/~xlx/}
+% {\textbf{Dr.~Lexing~Xie}}
+% (email:~\href{mailto:lexing.xie@anu.edu.au}{lexing.xie@anu.edu.au}; phone:~+61-2-6125-1646)
+% \begin{innerlist}
+	% \item Senior Lecturer,
+		% \href{http://cs.anu.edu.au/research/groups/human}{Information and Human Centred Computing Group}
+	% \item The Australian National University, Canberra, ACT 2601, Australia
+    % \item \emph{Dr.~Xie is my graduate co-supervisor.}
+% \end{innerlist}
+%\item[$\diamond$]
+
+% The ``More Info'' section may not be necessary; make sure it's short
+% so it doesn't prevent people from seeing references available to
+% contact.
+%\section{More Information}
+%More information and auxiliary documents can be found at\\%
+%\url{http://kndtran.com}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\includepdf[pages=1-3]{stmt-results-khoi-nguyen-tran-20140307.pdf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\cite{Compton2009,Tran2009a,Tran2009,Tran2009,Tran2010,Noel2012,Sedhain2013,Tran2013,Tran2013a,Tran2013b,Tran2013c,Tran2014,Tran2015}
+
+%\bibliographystyle{plain}
+%\bibliography{cv}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------%
+% The following is copyright and licensing information for
+% redistribution of this LaTeX source code; it also includes a liability
+% statement. If this source code is not being redistributed to others,
+% it may be omitted. It has no effect on the function of the above code.
+%----------------------------------------------------------------------%
+% Copyright (c) 2007, 2008, 2009, 2010, 2011 by Theodore P. Pavlic
+%
+% Unless otherwise expressly stated, this work is licensed under the
+% Creative Commons Attribution-Noncommercial 3.0 United States License. To
+% view a copy of this license, visit
+% http://creativecommons.org/licenses/by-nc/3.0/us/ or send a letter to
+% Creative Commons, 171 Second Street, Suite 300, San Francisco,
+% California, 94105, USA.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+% OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+% IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+% CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+% TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+% SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+%----------------------------------------------------------------------%
