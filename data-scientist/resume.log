@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.11)  29 NOV 2016 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.11)  21 JUL 2017 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -720,37 +720,72 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 341.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 341--364
+Overfull \hbox (6.0pt too wide) in paragraph at lines 341--365
 [][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 404.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 405.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 404.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 405.
+
+Overfull \hbox (0.47092pt too wide) in paragraph at lines 408--409
+[]\OT1/cmr/m/n/10 Developing re-search so-lu-tions to un-der-stand-ing of PDF d
+oc-u-ments for the Wat-son
+ []
+
+
+Overfull \hbox (16.472pt too wide) in paragraph at lines 409--410
+[]\OT1/cmr/m/n/10 Developing an end-to-end re-search based clas-si-fi-ca-tion s
+ys-tem for de-tect-ing van-dal-ism
+ []
+
+
+Overfull \hbox (13.24994pt too wide) in paragraph at lines 409--410
+\OT1/cmr/m/n/10 on Wikipedia, in-cor-po-rat-ing tra-di-tional fea-ture en-gi-ne
+er-ing tech-niques and ex-plor-ing
+ []
+
+
+Overfull \hbox (7.52762pt too wide) in paragraph at lines 421--422
+[]\OT1/cmr/m/n/10 Led de-vel-op-ment of ad-vanced pro-fil-ing tech-niques in co
+l-lab-o-ra-tion with ex-pe-ri-enced
+ []
+
+
+Overfull \hbox (11.5275pt too wide) in paragraph at lines 439--443
+[]\OT1/cmr/m/n/10 Led an ethics pro-posal for a re-search project on peo-ple's 
+sus-cep-ti-bil-ity to cy-ber-crime. 
+ []
+
+
+Overfull \hbox (6.16643pt too wide) in paragraph at lines 499--500
+[]\OT1/cmr/m/n/10 Demonstrated ef-fec-tive reuse of ma-chine learn-ing mod-els 
+across mul-ti-ple lan-guages. 
+ []
 
 Excluding 'comment' comment. 
 AED: lastpage setting LastPage
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 583.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 583.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 589.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 589.
 
 (./resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 583.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 583.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 589.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 589.
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: 75B93BBA8D946C6B61D6F8799505E6A3;180.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 583.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 589.
  ) 
 Here is how much of TeX's memory you used:
  7541 strings out of 493014
  110254 string characters out of 6133351
- 219448 words of memory out of 5000000
+ 220448 words of memory out of 5000000
  10991 multiletter control sequences out of 15000+600000
  5200 words of font info for 19 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -761,7 +796,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on resume.pdf (1 page, 84300 bytes).
+Output written on resume.pdf (1 page, 85328 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream

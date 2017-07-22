@@ -3,5 +3,4 @@
 pdflatex resume.tex
 pdflatex resume.tex
 pdflatex resume.tex
-acroread resume.pdf
-
+open resume.pdf
