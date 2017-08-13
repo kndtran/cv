@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.11)  21 JUL 2017 16:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.11)  13 AUG 2017 20:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -732,12 +732,6 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 405.
 
-Overfull \hbox (0.47092pt too wide) in paragraph at lines 408--409
-[]\OT1/cmr/m/n/10 Developing re-search so-lu-tions to un-der-stand-ing of PDF d
-oc-u-ments for the Wat-son
- []
-
-
 Overfull \hbox (16.472pt too wide) in paragraph at lines 409--410
 []\OT1/cmr/m/n/10 Developing an end-to-end re-search based clas-si-fi-ca-tion s
 ys-tem for de-tect-ing van-dal-ism
@@ -747,24 +741,6 @@ ys-tem for de-tect-ing van-dal-ism
 Overfull \hbox (13.24994pt too wide) in paragraph at lines 409--410
 \OT1/cmr/m/n/10 on Wikipedia, in-cor-po-rat-ing tra-di-tional fea-ture en-gi-ne
 er-ing tech-niques and ex-plor-ing
- []
-
-
-Overfull \hbox (7.52762pt too wide) in paragraph at lines 421--422
-[]\OT1/cmr/m/n/10 Led de-vel-op-ment of ad-vanced pro-fil-ing tech-niques in co
-l-lab-o-ra-tion with ex-pe-ri-enced
- []
-
-
-Overfull \hbox (11.5275pt too wide) in paragraph at lines 439--443
-[]\OT1/cmr/m/n/10 Led an ethics pro-posal for a re-search project on peo-ple's 
-sus-cep-ti-bil-ity to cy-ber-crime. 
- []
-
-
-Overfull \hbox (6.16643pt too wide) in paragraph at lines 499--500
-[]\OT1/cmr/m/n/10 Demonstrated ef-fec-tive reuse of ma-chine learn-ing mod-els 
-across mul-ti-ple lan-guages. 
  []
 
 Excluding 'comment' comment. 
@@ -796,7 +772,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on resume.pdf (1 page, 85328 bytes).
+Output written on resume.pdf (1 page, 84995 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
