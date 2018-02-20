@@ -1,4 +1,3 @@
-% This file was created with JabRef 2.10.
 % Encoding: UTF-8
 
 
@@ -51,11 +50,11 @@
   Address                  = {Canberra, Australia}
 }
 
-@Article{Tran2014,
-  Title                    = {{Cross-Language Learning from Bots and Users to detect Vandalism on Wikipedia}},
-  Author                   = {Khoi-Nguyen Tran and Peter Christen},
-  Journal                  = {IEEE Transactions on Knowledge and Data Engineering (TKDE)},
-  Year                     = {2014}
+@Article{Tran2015,
+  author  = {Khoi-Nguyen Tran and Peter Christen},
+  title   = {{Cross-Language Learning from Bots and Users to detect Vandalism on Wikipedia}},
+  journal = {IEEE Transactions on Knowledge and Data Engineering (TKDE)},
+  year    = {2015},
 }
 
 @InProceedings{Tran2013,
@@ -107,13 +106,12 @@
   Journal                  = {Knowledge Discovery and Data Mining, 2010. WKDD '10. Third International Conference on}
 }
 
-@InProceedings{Tran2009,
-  Title                    = {{Fusion of Decision Tree and Gaussian Mixture Models for Heterogeneous Data Sets}},
-  Author                   = {Khoi-Nguyen Tran and Huidong Jin},
-  Booktitle                = {Proceedings of the International Conference on Multimedia Technology (ICIMT)},
-  Year                     = {2009},
-
-  Journal                  = {Information and Multimedia Technology, 2009. ICIMT '09. International Conference on}
+@InProceedings{Tran2009b,
+  author    = {Khoi-Nguyen Tran and Huidong Jin},
+  title     = {{Fusion of Decision Tree and Gaussian Mixture Models for Heterogeneous Data Sets}},
+  booktitle = {Proceedings of the International Conference on Multimedia Technology (ICIMT)},
+  year      = {2009},
+  journal   = {Information and Multimedia Technology, 2009. ICIMT '09. International Conference on},
 }
 
 @InProceedings{Tran2013b,
@@ -127,3 +125,32 @@
   Quality                  = {1}
 }
 
+@PhdThesis{Tran2015a,
+  author = {Khoi-Nguyen Tran},
+  title  = {{Detecting Vandalism on Wikipedia across Multiple Languages}},
+  school = {The Australian National University},
+  year   = {2015},
+}
+
+@Article{Christen2016,
+  author  = {Peter Christen, Ross W. Gayler, Khoi-Nguyen Tran, Jeffrey Fisher, Dinusha Vatsalan},
+  title   = {{Automatic Discovery of Abnormal Values in Large Textual Databases}},
+  journal = {Journal of Data and Information Quality (JDIQ)},
+  year    = {2016},
+}
+
+@InProceedings{Lau2017,
+  author    = {Jey Han Lau, Lianhua Chi, Khoi-Nguyen Tran, Trevor Cohn},
+  title     = {{End-to-end Network for Twitter Geolocation Prediction and Hashing}},
+  booktitle = {Proceedings of the The 8th International Joint Conference on Natural Language Processing (IJCNLP)},
+  year      = {2017},
+}
+
+@InProceedings{Tran2018,
+  author    = {Khoi-Nguyen Tran, Jey Han Lau, Danish Contractor, Utkarsh Gupta, Bikram Sengupta, Chris J. Butler, Mukesh Mohania},
+  title     = {Document Chunking and Learning Objective Generation for Instruction Design},
+  booktitle = {(under review)},
+  year      = {2018},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
