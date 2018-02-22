@@ -40,6 +40,7 @@
 %\usepackage{times}
 %\renewcommand{\familydefault}{\sfdefault}
 
+\usepackage[bookmarks=false]{hyperref}
 \usepackage{comment}
 \usepackage{pdfpages}
 \usepackage[utf8]{inputenc}
@@ -117,6 +118,9 @@
 %   \restartlist{bibenum}
 %
 %   at the place where you want the numbering to reset.
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
 
 \makeatletter
 \newlength{\bibhang}
@@ -358,7 +362,7 @@ Southbank, VIC 3006, Australia}
 % Non-snail-mail contact information
 \parbox{\rcollength}{%
 \textit{Mobile:} +61 424 316 544 \\
-\textit{Email:} \email{kndtran@gmail.com}\\
+%\textit{Email:} \email{kndtran@gmail.com}\\
 \textit{Email:} \email{khndtran@au1.ibm.com}\\
 \textit{WWW:} \href{http://kndtran.com/}{kndtran.com}}
 
@@ -410,7 +414,11 @@ Southbank, VIC 3006, Australia}
 
 \section{Objective}
 
-Blah blah
+To develop and apply my research skills in industry by creating innovative solutions for business problems with real-world impact.
+
+\section{Research Interests}
+
+Data Science, Machine/Deep Learning, Text Mining, Natural Language Processing, Knowledge Discovery and Data Mining, AI for Business
 
 %\textbf{Knowledge generation models for online social collaborative environments:} knowledge sources, data mining, machine learning, scalable and distributed algorithms, Web based semantics, knowledge generation, citations, conflicts on the Web, real time analytics, and user interfaces.
 
@@ -420,85 +428,108 @@ Blah blah
 
 \section{Employment}
 
-IBM Research, 60 City Road, Southbank, VIC 3006, Australia
+\textbf{IBM Research -- Australia}
 
 \halfblankline
 
 \begin{innerlist}
-	\item Postdoctoral Researcher. \hfill {June 2016 -- Current}
-	\item[] Cognitive Industries
+	\item Postdoctoral Researcher. Industry AI. \hfill {Jun 2016 -- Current}
+	%\item[] Cognitive Industries
 	\begin{innerlist}
 		\item[$-$] Manager: Dr. Christopher J. Butler
-		\item[$-$] Education...
+		\item[$-$] Various research and development projects with IBM Watson Education.
+		\item[$-$] Developed techniques for chunking documents and generating learning objectives from keyphrases and Bloom's verbs. Work recognised as division led expertise.
+		\item[$-$] Transitioned and significantly improved past research components for the business teams. For example, fully parallelised a bottleneck component and wrapped components in scripts or microservice APIs for one-click execution and standardised interaction end-points. %on alignment of content to learning instructions. %Each component was deconstructed and parallelised where possible, and validation experiments were performed to support improvements. Introduced a supervised deep learning model to improve performance of the unsupervised alignment of content.
+		\item[$-$] Other research work included geolocation of Twitter tweets, detecting vandalism on Wikipedia, and predicting price of items from their images.
+		\item[$-$] Publications: \cite{Lau2017}, \cite{Tran2018}
     \end{innerlist}
 \end{innerlist}
 
 \halfblankline
 
-The Australian National University (ANU), Canberra, ACT 2601, Australia
+\halfblankline
+
+\textbf{Australian Federal Government}
 
 \halfblankline
 
 \begin{innerlist}
-	\item Research Assistant. \hfill {November 2014 -- May 2015}
-	\item[] \href{http://regnet.anu.edu.au/content/anu-cybercrime-observatory}{ANU Cybercrime Observatory}
-	\item[] \href{http://regnet.anu.edu.au/}{Regulatory Institutions Network (RegNet)}
+	\item Data Scientist. Research and Development Team. \hfill {May 2015 -- Jun 2016}
+	%\item[] Cognitive Industries
 	\begin{innerlist}
-		\item[$-$] Project: ``Developing a Cybercrime Course for Undergraduate/Masters Students''
-		\item[$-$] Supervisor:
-			\href{https://researchers.anu.edu.au/researchers/broadhurst-r}%
-				{Professor Roderic Broadhurst}
-		\item[$-$] Assisting in developing informative and instructional learning materials, and problem based learning exercises for tutorials.
-		\item[$-$] Identifying and compiling appropriate reading material for a reading brick.
+		\item[$-$] Worked on sensitive (but unclassified) and classified projects.
     \end{innerlist}
+\end{innerlist}
+
+\halfblankline
+
+\halfblankline
+
+\textbf{The Australian National University (ANU)}
+
+\halfblankline
+
+\begin{innerlist}
+	%\item Research Assistant. \hfill {November 2014 -- May 2015}
+	%\item[] \href{http://regnet.anu.edu.au/content/anu-cybercrime-observatory}{ANU Cybercrime Observatory}
+	%\item[] \href{http://regnet.anu.edu.au/}{Regulatory Institutions Network (RegNet)}
+	%\begin{innerlist}
+	%	\item[$-$] Project: ``Developing a Cybercrime Course for Undergraduate/Masters Students''
+	%	\item[$-$] Supervisor:
+	%		\href{https://researchers.anu.edu.au/researchers/broadhurst-r}%
+	%			{Professor Roderic Broadhurst}
+	%	\item[$-$] Assisting in developing informative and instructional learning materials, and problem based learning exercises for tutorials.
+	%	\item[$-$] Identifying and compiling appropriate reading material for a reading brick.
+    %\end{innerlist}
 	
-	\halfblankline
+	%\halfblankline
 	
-	\item Research Assistant. \hfill {March 2013 -- June 2014}
-	\item[] \href{http://regnet.anu.edu.au/content/anu-cybercrime-observatory}{ANU Cybercrime Observatory}
-	\item[] \href{http://regnet.anu.edu.au/}{Regulatory Institutions Network (RegNet)}
+	\item Research Assistant \& Co-founder. Cybercrime Observatory. \hfill {Mar 2013 -- May 2015}
+	%\item[] \href{http://regnet.anu.edu.au/content/anu-cybercrime-observatory}{ANU Cybercrime Observatory}
+	%\item[] \href{http://regnet.anu.edu.au/}{Regulatory Institutions Network (RegNet)}
 	\begin{innerlist}
-		\item[$-$] Project: ``Tracking Cybercrime Activities in Australia''
-		\item[$-$] Supervisors:
-			\href{http://mamounalazab.com/}%
-				{Dr. Mamoun Alazab},
-			\href{https://researchers.anu.edu.au/researchers/broadhurst-r}%
-				{Professor Roderic Broadhurst}
+		\item[$-$] Supervisors \& Co-founders: Dr. Mamoun Alazab, Prof. Roderic Broadhurst
+		\item[$-$] Projects: Investigating Malicious Spam Emails, History of Cybercrime Activities
+		\item[$-$] Developed a novel detection technique for malicious content (attachments or URLs) only using email text. High detection rates demonstrated for over 1 million emails with attachments and 21 million emails with URLs.
+		%\item[$-$] Project: ``Tracking Cybercrime Activities in Australia''
+		%	\href{https://researchers.anu.edu.au/researchers/broadhurst-r}{Professor Roderic Broadhurst}
 		%\item[$-$] Negotiated and obtained three real-world email data sets; 12 million+ emails.
-		\item[$-$] Led research into detecting spam emails with malicious attachments or URLs.
-		\item[$-$] Processed 1 million+ attachments and 21 million+ URLs from all emails.
-		\item[$-$] Developed novel detection technique for malicious content based on email content.
-		\item[$-$] (See page 3.) Published~\ref{pub:tran2013a} in the Australasian Data Mining Conference, a top-tier national data mining conference. 
-    \end{innerlist}
-	
-	\halfblankline
-	
-	\item Research Assistant. \hfill {January 2011 -- January 2012}
-	\item[] \href{http://cs.anu.edu.au/}{Research School of Computer Science}
-	\begin{innerlist}
-		\item[$-$] Project (funded by Google): ``Preference Elicitation for Social Recommendation''
-		\item[$-$] Co-investigator: Joseph Noel
-		\item[$-$] Supervisors:
-                \href{http://cs.anu.edu.au/people/Peter.Christen/}%
-                     {Prof. Peter Christen},
-                \href{http://users.cecs.anu.edu.au/~ssanner/}%
-                     {Dr. Scott Sanner},
-                \href{http://cecs.anu.edu.au/~xlx/}%
-                     {Dr. Lexing Xie},
-                \href{http://users.cecs.anu.edu.au/~u4882938/}%
-                     {Dr. Edwin Bonilla}
-		\item[$-$] Led development of Facebook app (\href{http://linkr.anu.edu.au}{LinkR}) to collect user data for research on collaborative filtering for recommendation.
-		\item[$-$] Recruited and supported over 200 participants in a 5 month user study.
-		\item[$-$] Collected usage data from over 37,000 Facebook users and their friends.
-		\item[$-$] (See page 3.) Published~\ref{pub:noel2012} novel recommendation algorithms and evaluation on real-world data in World Wide Web Conference, a top-tier international computer science conference.
+		%\item[$-$] Led research into detecting spam emails with malicious attachments or URLs.
+		%\item[$-$] Processed 1 million+ attachments and 21 million+ URLs from all emails.
+		%\item[$-$] Developed novel detection technique for malicious content based on email content.
+		\item[$-$] Publication: \cite{Tran2013c}.
 	\end{innerlist}
 	
+	\halfblankline
 	
+	\item Research Assistant. Research School of Computer Science. \hfill {Jan 2011 -- May 2015}
+	%\item[] \href{http://cs.anu.edu.au/}{Research School of Computer Science}
+	\begin{innerlist}
+		\item[$-$] Supervisors: Prof. Peter Christen, Dr. Scott Sanner, Dr. Lexing Xie
+		\item[$-$] Project: Detecting Abnormal Text Values
+		\begin{innerlist}
+			\item[$*$] Researched techniques to automatically detect abnormal text values from large databases using only the distribution of text data within those databases.
+		\end{innerlist}
+		\item[$-$] Project: New Objective Functions for Social Collaborative Filtering
+		\begin{innerlist}
+			\item[$*$] Developed a Facebook app to collect user data over 5 months from 100+ participants and their 37,000+ friends.% for research into new objective functions for collaborative filtering.
+		\end{innerlist}
+		\item[$-$] Project: Synthetic Data Generation and Corruption
+		\begin{innerlist}
+			\item[$*$] Developed a user interface for a novel synthetic data generation method that mimics real-world errors through a variety of data corruption methods.
+		\end{innerlist}
+		%\item[$-$] Project (funded by Google): ``Preference Elicitation for Social Recommendation''
+		%\item[$-$] Co-investigator: Joseph Noel
+		%\item[$-$] Led development of Facebook app (\href{http://linkr.anu.edu.au}{LinkR}) to collect user data for research on collaborative filtering for recommendation.
+		%\item[$-$] Recruited and supported over 200 participants in a 5 month user study.
+		%\item[$-$] Collected usage data from over 37,000 Facebook users and their friends.
+		\item[$-$] Publications: \cite{Christen2016}, \cite{Noel2012}, \cite{Tran2013b}
+	\end{innerlist}
 	
 	\begin{comment}
 	\halfblankline
 	
-	\item Summer Research Scholar. Full-time. \hfill {November 2009 -- February 2010}
+	\item Summer Research Scholar. Full-time. \hfill {Nov 2009 -- Feb 2010}
 	\begin{innerlist}
 		\item[$-$] Project: ``Tracking Citation Counts from Online Sources
 		\item[$-$] Supervisor:
@@ -535,24 +566,29 @@ The Australian National University (ANU), Canberra, ACT 2601, Australia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-
-\section{Teaching}
-
-\href{http://www.anu.edu.au/}{\textbf{The Australian National University (ANU)}}, Canberra, ACT 2601, Australia
-
-\begin{innerlist}
-\item \textit{Teaching Assistant} \hfill{July 2008 -- July 2012}\\
-	\begin{innerlist}
-		\item[$-$] Masters Course: Algorithms for Data Mining; Semester 1 of 2010, 2011, 2012.
-		\item[$-$] Course: Advanced Databases and Data Mining; Semester 1 of 2009.
-		\item[$-$] Course: Algorithms; Semester 2 of 2008.
-		\item[$-$] Course: Concurrent and Distributed Systems; Semester 2 of 2008
-	\end{innerlist}
-\end{innerlist}
 
 \begin{comment}
-\item[] \textit{Teaching Assistant} \hfill{July 2008 to July 2012}\\
+\section{Teaching}
+
+\textbf{The Australian National University (ANU)}
+
+\halfblankline
+
+\begin{innerlist}
+	\item \textit{Teaching Assistant} \hfill{Jul 2008 -- Jul 2012}
+	\begin{innerlist}
+		\item[$-$] Masters Courses: Algorithms for Data Mining
+		\item[$-$] Undergraduate Courses: Advanced Databases and Data Mining, Algorithms, Concurrent and Distributed Systems.
+		%\item[$-$] Masters Course: Algorithms for Data Mining; Semester 1 of 2010, 2011, 2012.
+		%\item[$-$] Course: Advanced Databases and Data Mining; Semester 1 of 2009.
+		%\item[$-$] Course: Algorithms; Semester 2 of 2008.
+		%\item[$-$] Course: Concurrent and Distributed Systems; Semester 2 of 2008
+	\end{innerlist}
+\end{innerlist}
+\end{comment}
+
+\begin{comment}
+\item[] \textit{Teaching Assistant} \hfill{Jul 2008 to Jul 2012}\\
     \begin{innerlist}
         \item Lab Instructor and Grader for COMP8400: Algorithms for Data Mining
         \begin{innerlist}
@@ -591,35 +627,33 @@ The Australian National University (ANU), Canberra, ACT 2601, Australia
 
 \section{Education}
 
-\href{http://www.anu.edu.au/}{\textbf{The Australian National University (ANU)}}, Canberra, ACT 2601, Australia
+The Australian National University (ANU)
 
-%\textbf{Current statement of results attached. An academic transcript is available on request.} From the \href{http://www.anu.edu.au/sas/seap/examinationsandassessment/5.5.php}{ANU Grade Scale}: Mark is out of 100; HD is High Distinction; D is Distinction; H1 is First Class Honours; KU is continuing course; and RC is Research Continuing.
+\halfblankline
 
 \begin{innerlist}
-\item Ph.D. \hfill{(July 2015}
+\item Ph.D. in Engineering and Computer Science \hfill{Feb 2010 -- Jul 2015}
 	\begin{innerlist}
-		\item[$-$] Area of Study: Machine learning and its applications
+		\item[$-$] Area of Study: Machine Learning Applications
 		\item[$-$] Thesis Title: \emph{Detecting Vandalism on Wikipedia across Multiple Languages}
-		%\item Candidacy: \emph{Research Problems in Distributed Control for Energy Systems}
-		\item[$-$] Supervisors:
-			\href{http://cs.anu.edu.au/people/Peter.Christen/}{Assoc. Prof. Peter Christen},
-			\href{http://users.cecs.anu.edu.au/~ssanner/}{Dr. Scott Sanner},
-			\href{http://users.cecs.anu.edu.au/~xlx/}{Dr. Lexing Xie}
-		\item[$-$] (See page 3.) Publications:~\ref{pub:tran2015},~\ref{pub:tran2014},~\ref{pub:tran2013a},~\ref{pub:tran2013b},~\ref{pub:tran2013d}.
+		\item[$-$] Supervisors: Prof. Peter Christen, Dr. Scott Sanner, Dr. Lexing Xie
+		\item[$-$] Publications: \cite{Tran2015b}, \cite{Tran2013}, \cite{Tran2013a}, \cite{Tran2015a}, \cite{Tran2015}
 	\end{innerlist}
 
-\item Bachelor of Computer Science, with First Class Honours \hfill{December 2009}
+\halfblankline
+
+\item Bachelor of Computer Science, with First Class Honours \hfill{Feb 2006 -- Dec 2009}
 	\begin{innerlist}
-		\item[$-$] GPA: 3.75/4; Overall course average of High Distinction.
+		\item[$-$] GPA: 6.75 / 7. Overall course average of High Distinction.
 		\item[$-$] Honours Thesis Topic: \emph{Semantic Sensor Composition}
 		\begin{innerlist}
-			\item[$*$] Supervisor: \href{http://www.ict.csiro.au/staff/michael.compton/}{Dr. Michael Compton}
-			\item[$*$] 2 publications.%(See page 3.) Publications:~\ref{pub:tran2009a}~\ref{pub:tran2009b},~\ref{pub:tran2009d}
+			\item[$*$] Supervisor: Dr. Michael Compton
+			\item[$*$] Publications: \cite{Compton2009}, \cite{Tran2009}, \cite{Tran2009a}
 		\end{innerlist}
 		\item[$-$] Individual Research Projects: \emph{Detecting Network Anomalies}
 		\begin{innerlist}
-			\item[$*$] Supervisor: \href{http://people.cecs.anu.edu.au/user/1052}{Dr. Huidong (Warren) Jin}
-			\item[$*$] 2 publications.%:~\ref{pub:tran2010},~\ref{pub:tran2009c}
+			\item[$*$] Supervisor: Dr. Huidong (Warren) Jin
+			\item[$*$] Publications: \cite{Tran2009b}, \cite{Tran2010}
 		\end{innerlist}
 	\end{innerlist}
 \end{innerlist}
@@ -633,8 +667,8 @@ The Australian National University (ANU), Canberra, ACT 2601, Australia
 Languages:
 %
 \begin{innerlist}
-    \item Experienced: Python, UNIX shell scripting, PHP, JavaScript, SQL
-	\item Familiar: Haskell, R, C, Java, \Matlab, C\#
+	\item Experienced: Java, Python, R, SQL, HTML, JavaScript, Unix Shell Scripting
+	\item Familiar: Scala, CSS
 \end{innerlist}
 
 \halfblankline
@@ -642,15 +676,17 @@ Languages:
 Software:
 %
 \begin{innerlist}
-    \item Experienced: Scikit-learn (Python machine learning library), \LaTeX , JQuery, MySQL
-	\item Familiar: Eclipse, Apache, SVN/Git, Ubuntu Linux, Microsoft Windows XP/7/8, Microsoft Word/Excel/Powerpoint
+	\item Experienced: Scikit-learn, JQuery, Flask, MySQL, dplyr / tidyverse, Eclipse, PDFBox, GitHub, ZenHub, IBM Cloud, LaTeX, Word/Excel/Powerpoint, Ubuntu Linux, Windows, macOS
+	\item Familiar: Tensorflow, NumPy, Docker, Kubernetes, NLTK, Stanford NLP
 \end{innerlist}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Personal \\ Projects}
+\begin{comment}
+
+\section{Other \\ Projects}
 
 \href{http://dmm.anu.edu.au/geco/}{\textbf{Online Personal Data Generator and Corruptor (GeCo)}}
 
@@ -671,66 +707,21 @@ Software:
 
 \halfblankline
 
+\halfblankline
+
 \href{http://www.imaginecup.com/}{\textbf{Microsoft Imagine Cup 2011}}
 
 \halfblankline
 
 \begin{innerlist}
-	\item Personal project. Free-time. \hfill {February 2011 -- June 2011}
+	\item Personal project. Free-time. \hfill {Feb 2011 -- Jun 2011}
 	\begin{innerlist}
 		\item[$-$] Project: ``Disaster Coordination using Social Networks''
 		\item[$-$] Led a team of 2 developers and an artist to develop a prototype software system for the competition. We developed a mobile app for Windows Phone 7 (in C\# using the Windows Phone developer tools) and a web app (in C\# using .NET and Silverlight).
 		\item[$-$] First and second round Australian finalist. Placed 4th at the Australian finals.
     \end{innerlist}
 \end{innerlist}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Add a little space to nudge next ``Conference Publications'' marginpar
-% down to make room for tall ``Submitted Journal Publications''
-% marginpar. If there are enough submitted journal publications, this
-% space will not be needed (and should be removed).
-%\vspace{0.1in}
-
-\section{Selected Publications}
-
-\textbf{Google Scholar Profile:}
-
-\url{http://scholar.google.com.au/citations?user=ihFcT5QAAAAJ}
-
-\mbox{}
-
-\textbf{ResearchGate Profile:}
-
-\url{https://www.researchgate.net/profile/Khoi\_Nguyen\_Tran}
-
-\mbox{}
-
-\begin{bibenum}
-	\item\label{pub:tran2015} \textbf{Khoi-Nguyen Tran}, Peter Christen, Scott Sanner, and Lexing Xie. \textit{Context-aware Detection of Sneaky Vandalism on Wikipedia across Multiple Languages}. In Proceedings of the 19th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), Ho Chi Minh City, Vietnam, 2015.
-	
-	\item\label{pub:tran2014} \textbf{Khoi-Nguyen Tran} and Peter Christen. \textit{Cross-Language Learning from Bots and Users to detect Vandalism on Wikipedia}. IEEE Transactions on Knowledge and Data Engineering (TKDE), 2014.
-	
-	\item\label{pub:tran2013a} \textbf{Khoi-Nguyen Tran}, Mamoun Alazab, and Roderic Broadhurst. \textit{Towards a Feature Rich Model for Predicting Spam Emails containing Malicious Attachments and URLs}. In Proceedings of the 11th Australasian Data Mining Conference (AusDM), Canberra, Australia, 2013.
-	
-	\item\label{pub:tran2013b} \textbf{Khoi-Nguyen Tran} and Peter Christen. \textit{Identifying Multilingual Wikipedia Articles based on Cross-Language Similarity and Activity}. In Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Poster, San Francisco, USA, 2013.
-	
-	\item\label{pub:tran2013c} \textbf{Khoi-Nguyen Tran}, Dinusha Vatsalan, and Peter Christen. \textit{GeCo - An Online Personal data Generator and Corruptor}. In Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Demo, San Francisco, USA, 2013.
-	
-	\item\label{pub:tran2013d} \textbf{Khoi-Nguyen Tran} and Peter Christen. \textit{Cross-Language Prediction of Vandalism on Wikipedia Using Article Views and Revisions}. In Proceedings of the 17th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), Gold Coast, Australia, 2013.
-	
-	\item\label{pub:noel2012} Joseph Noel, Scott Sanner, \textbf{Khoi-Nguyen Tran}, Peter Christen, Lexing Xie, Edwin V. Bonilla, Ehsan Abbasnejad, and Nicolas Della Penna. \textit{New Objective Functions for Social Collaborative Filtering}. In Proceedings of the 21st International World Wide Web Conference (WWW), Lyon, France, 2012.
-
-\end{bibenum}
-
-
-\section{Other Publications}
-
-\begin{bibenum}
-	\item\label{pub:tran2009d} \textbf{Khoi-Nguyen Tran}. \textit{Semantic Sensor Composition}. Honours Thesis. The Australian National University, 2009.
-\end{bibenum}
+\end{comment}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -738,14 +729,20 @@ Software:
 
 \section{Academic Awards}
 
-\href{http://www.anu.edu.au/}{The Australian National University}
+The Australian National University (ANU)
+
+\halfblankline
+
 \begin{innerlist}
-	\item CSIRO ICT Scholarship for Computer Science, 2006--2009
+	\item ANU Supplementary Scholarship, 2010--2014
+	\item Australian Postgraduate Award (APA), 2010--2014
+	\item ANU College of Engineering and Computer Science Dean's List, 2009
+	\item ANU College of Engineering and Computer Science Dean's Prize, 2008
 	\item Boyapati Prize for 2nd Year Computer Science and Mathematics, 2007
 	\begin{innerlist}
 		\item[$-$] Awarded to students obtaining a High Distinction (highest grade possible) in two computer science and two mathematics courses in their 2nd year of study.
 	\end{innerlist}
-	\item Dean's List, 2009
+	\item Bachelor of Computer Science (Honours) Scholarship, 2006--2009
 \end{innerlist}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -777,7 +774,27 @@ Software:
 
 \section{Service}
 
-\href{http://anucssa.com}{ANU Computer Science Students' Association}
+Mentor to 3 people, 2017-2018
+
+Volunteer / Lecturer / Talk, VietAI, 2018 (TBC)
+
+Invited Talk/Lecture, International Vietnamese Academics Network, 2018 (TBC)
+
+Invited Talk, RMIT Vietnam, 2017
+
+Invited Participant, Future Shapers Forum, 2017
+
+Delegate, Australia-Vietnam Young Leadership Dialogue, 2017
+
+Volunteer, Australasian Data Mining Conference (AusDM), 2013
+
+Volunteer, Open Source Developers' Conference (OSDC), 2011
+
+Microsoft Student Ambassador, 2011--2012
+
+Volunteer and President, ANU Computer Science Students' Association, 2007--2012
+
+\begin{comment}
 \begin{innerlist}
     \item Volunteer, 2007--2010
 	%\begin{innerlist}
@@ -796,16 +813,8 @@ Software:
 		\item[$-$] Runner Up for Club of the Year in 2012.
 	\end{innerlist}
 \end{innerlist}
+\end{comment}
 
-\halfblankline
-
-Miscellaneous
-%\href{http://anucssa.com}{Conferences}
-\begin{innerlist}
-    \item Volunteer, 2013, \href{http://ausdm.togaware.com/}{The Australasian Data Mining Conference}
-    \item Volunteer, 2011, \href{http://2011.osdc.com.au/}{Open Source Developers' Conference}
-    \item \href{http://www.microsoftstudentpartners.com/}{Microsoft Student Ambassador} at the ANU, 2011--2012
-\end{innerlist}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -841,45 +850,47 @@ Miscellaneous
 
 \section{References Available to Contact}
 
-\href
-{http://cs.anu.edu.au/people/Peter.Christen/}
-{\textbf{A. Prof.~Peter~Christen}}
-(email:~\href{mailto:peter.christen@anu.edu.au}{peter.christen@anu.edu.au})
+\textbf{Dr.~Chris~Butler} (email: chris.butler@au1.ibm.com)
 %
 \begin{innerlist}
-	\item Associate Professor,
-		\href{http://cs.anu.edu.au/}{Research School of Computer Science}
-	\item The Australian National University, Canberra, ACT 2601, Australia
-    \item \emph{Assoc. Prof.~Christen is my graduate supervisor and panel chair for my PhD candidacy.}
+	\item IBM Research
+	\item 60 City Road, Southbank, VIC 3006, Australia
+	\item \emph{He is my manager.}
 \end{innerlist}
 
 \halfblankline
 
-\href
-{http://regnet.anu.edu.au/people/professor-roderic-broadhurst}
-{\textbf{Prof.~Roderic~Broadhurst}}
-(email:~\href{mailto:roderic.broadhurst@anu.edu.au}{roderic.broadhurst@anu.edu.au})
+\textbf{Prof.~Peter~Christen} (email: peter.christen@anu.edu.au)
 %
 \begin{innerlist}
-	\item Professor,
-		\href{http://cass.anu.edu.au/}{College of Arts and Social Science}
+	\item Professor, Research School of Computer Science
 	\item The Australian National University, Canberra, ACT 2601, Australia
-    \item \emph{Prof.~Broadhurst is my supervisor at the ANU Cybercrime Observatory for the project ``Developing a Cybercrime Course for Undergraduate/Masters Students''.}
+	\item \emph{He was my primary supervisor and panel chair for my PhD research.}
 \end{innerlist}
 
 \halfblankline
 
-\href
-{http://regnet.anu.edu.au/people/dr-mamoun-alazab}
-{\textbf{Dr.~Mamoun~Alazab}}
-(email:~\href{mailto:mamoun.alazab@anu.edu.au}{mamoun.alazab@anu.edu.au})
+\textbf{Prof.~Roderic~Broadhurst} (email: roderic.broadhurst@anu.edu.au)
 %
 \begin{innerlist}
-	\item Research Associate,
-		\href{http://cass.anu.edu.au/}{College of Arts and Social Science}
+	\item Professor, College of Arts and Social Science
 	\item The Australian National University, Canberra, ACT 2601, Australia
-    \item \emph{Dr.~Alazab was my main supervisor for the project named ``Tracking Cybercrime Activities in Australia''.}
+	\item \emph{He was my supervisor at the ANU Cybercrime Observatory.}
 \end{innerlist}
+
+%\halfblankline
+
+%\href
+%{http://regnet.anu.edu.au/people/dr-mamoun-alazab}
+%{\textbf{Dr.~Mamoun~Alazab}}
+%(email:~\href{mailto:mamoun.alazab@anu.edu.au}{mamoun.alazab@anu.edu.au})
+%
+%\begin{innerlist}
+%	\item Research Associate,
+%		\href{http://cass.anu.edu.au/}{College of Arts and Social Science}
+%	\item The Australian National University, Canberra, ACT 2601, Australia
+%    \item \emph{Dr.~Alazab was my main supervisor for the project named ``Tracking Cybercrime Activities in Australia''.}
+%\end{innerlist}
 
 % \halfblankline
 
@@ -930,6 +941,45 @@ Miscellaneous
 
 %\bibliographystyle{plain}
 %\bibliography{cv}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Add a little space to nudge next ``Conference Publications'' marginpar
+% down to make room for tall ``Submitted Journal Publications''
+% marginpar. If there are enough submitted journal publications, this
+% space will not be needed (and should be removed).
+%\vspace{0.1in}
+
+\section{Cited Publications}
+
+Full list available at Google Scholar:
+
+\url{http://scholar.google.com.au/citations?user=ihFcT5QAAAAJ}
+
+\bibliographystyle{abbrv}
+\bibliography{cv}
+
+\begin{comment}
+\begin{bibenum}
+	\item\label{pub:tran2015} \textbf{Khoi-Nguyen Tran}, Peter Christen, Scott Sanner, and Lexing Xie. \textit{Context-aware Detection of Sneaky Vandalism on Wikipedia across Multiple Languages}. In Proceedings of the 19th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), Ho Chi Minh City, Vietnam, 2015.
+	
+	\item\label{pub:tran2014} \textbf{Khoi-Nguyen Tran} and Peter Christen. \textit{Cross-Language Learning from Bots and Users to detect Vandalism on Wikipedia}. IEEE Transactions on Knowledge and Data Engineering (TKDE), 2014.
+	
+	\item\label{pub:tran2013a} \textbf{Khoi-Nguyen Tran}, Mamoun Alazab, and Roderic Broadhurst. \textit{Towards a Feature Rich Model for Predicting Spam Emails containing Malicious Attachments and URLs}. In Proceedings of the 11th Australasian Data Mining Conference (AusDM), Canberra, Australia, 2013.
+	
+	\item\label{pub:tran2013b} \textbf{Khoi-Nguyen Tran} and Peter Christen. \textit{Identifying Multilingual Wikipedia Articles based on Cross-Language Similarity and Activity}. In Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Poster, San Francisco, USA, 2013.
+	
+	\item\label{pub:tran2013c} \textbf{Khoi-Nguyen Tran}, Dinusha Vatsalan, and Peter Christen. \textit{GeCo - An Online Personal data Generator and Corruptor}. In Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Demo, San Francisco, USA, 2013.
+	
+	\item\label{pub:tran2013d} \textbf{Khoi-Nguyen Tran} and Peter Christen. \textit{Cross-Language Prediction of Vandalism on Wikipedia Using Article Views and Revisions}. In Proceedings of the 17th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), Gold Coast, Australia, 2013.
+	
+	\item\label{pub:noel2012} Joseph Noel, Scott Sanner, \textbf{Khoi-Nguyen Tran}, Peter Christen, Lexing Xie, Edwin V. Bonilla, Ehsan Abbasnejad, and Nicolas Della Penna. \textit{New Objective Functions for Social Collaborative Filtering}. In Proceedings of the 21st International World Wide Web Conference (WWW), Lyon, France, 2012.
+
+	\item\label{pub:tran2009d} \textbf{Khoi-Nguyen Tran}. \textit{Semantic Sensor Composition}. Honours Thesis. The Australian National University, 2009.
+\end{bibenum}
+\end{comment}
 
 \end{document}
 

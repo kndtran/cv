@@ -1,27 +1,30 @@
 % Encoding: UTF-8
 
+@InProceedings{Lau2017,
+  author    = {Jey Han Lau and LianHua Chi and Khoi-Nguyen Tran and Trevor Cohn},
+    title     = {{End-to-end Network for Twitter Geolocation Prediction and Hashing}},
+      booktitle = {Proceedings of the 8th International Joint Conference on Natural Language Processing (IJCNLP)},
+        year      = {2017},
+}
 
 @InProceedings{Compton2009,
-  Title                    = {{Reasoning about Sensors and Compositions}},
-  Author                   = {Compton, M. and Neuhaus, H. and Taylor, K. and Tran, K.N.},
-  Booktitle                = {Proceedings of the 2nd International Workshop on Semantic Sensor Networks},
-  Year                     = {2009},
-
-  Address                  = {Washington DC, USA}
+  author    = {Compton, M. and Neuhaus, H. and Taylor, K. and Tran, K.N.},
+  title     = {{Reasoning about Sensors and Compositions}},
+  booktitle = {Proceedings of the 2nd International Workshop on Semantic Sensor Networks},
+  year      = {2009},
+  address   = {Washington DC, USA},
 }
 
 @InProceedings{Noel2012,
-  Title                    = {{New Objective Functions for Social Collaborative Filtering}},
-  Author                   = {Joseph Noel and Scott Sanner and Khoi-Nguyen Tran and Peter Christen and Lexing Xie and Edwin V. Bonilla and Ehsan Abbasnejad and Nicolas Della Penna},
-  Booktitle                = {Proceedings of the 21st International World Wide Web Conference (WWW)},
-  Year                     = {2012},
-
-  Address                  = {Lyon, France},
-
-  Acmid                    = {2187952},
-  ISBN                     = {978-1-4503-1229-5},
-  Location                 = {Lyon, France},
-  Numpages                 = {10}
+  author    = {Joseph Noel and Scott Sanner and Khoi-Nguyen Tran and Peter Christen and Lexing Xie and Edwin V. Bonilla and Ehsan Abbasnejad and Nicolas Della Penna},
+  title     = {{New Objective Functions for Social Collaborative Filtering}},
+  booktitle = {Proceedings of the 21st International World Wide Web Conference (WWW)},
+  year      = {2012},
+  address   = {Lyon, France},
+  acmid     = {2187952},
+  isbn      = {978-1-4503-1229-5},
+  location  = {Lyon, France},
+  numpages  = {10},
 }
 
 @InProceedings{Sedhain2013,
@@ -34,23 +37,22 @@
 }
 
 @MastersThesis{Tran2009,
-  Title                    = {{Semantic Sensor Composition}},
-  Author                   = {Khoi-Nguyen Tran},
-  School                   = {The Australian National University},
-  Year                     = {2009},
-  Note                     = {Honours Thesis. The Australian National University}
+  author = {Khoi-Nguyen Tran},
+  title  = {{Semantic Sensor Composition}},
+  school = {The Australian National University},
+  year   = {2009},
+  note   = {Honours Thesis. The Australian National University},
 }
 
 @InProceedings{Tran2013c,
-  Title                    = {{Towards a Feature Rich Model for Predicting Spam Emails containing Malicious Attachments and URLs}},
-  Author                   = {Khoi-Nguyen Tran and Mamoun Alazab and Roderic Broadhurst},
-  Booktitle                = {Proceedings of the 11th Australasian Data Mining Conference (AusDM)},
-  Year                     = {2013},
-
-  Address                  = {Canberra, Australia}
+  author    = {Khoi-Nguyen Tran and Mamoun Alazab and Roderic Broadhurst},
+  title     = {{Towards a Feature Rich Model for Predicting Spam Emails containing Malicious Attachments and URLs}},
+  booktitle = {Proceedings of the 11th Australasian Data Mining Conference (AusDM)},
+  year      = {2013},
+  address   = {Canberra, Australia},
 }
 
-@Article{Tran2015,
+@Article{Tran2015a,
   author  = {Khoi-Nguyen Tran and Peter Christen},
   title   = {{Cross-Language Learning from Bots and Users to detect Vandalism on Wikipedia}},
   journal = {IEEE Transactions on Knowledge and Data Engineering (TKDE)},
@@ -58,52 +60,45 @@
 }
 
 @InProceedings{Tran2013,
-  Title                    = {{Cross Language Prediction of Vandalism on Wikipedia Using Article Views and Revisions}},
-  Author                   = {Khoi-Nguyen Tran and Peter Christen},
-  Booktitle                = {Proceedings of the 17th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)},
-  Year                     = {2013},
-
-  Address                  = {Gold Coast, Australia},
-
-  ISBN                     = {978-3-642-37455-5}
+  author    = {Khoi-Nguyen Tran and Peter Christen},
+  title     = {{Cross Language Prediction of Vandalism on Wikipedia Using Article Views and Revisions}},
+  booktitle = {Proceedings of the 17th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)},
+  year      = {2013},
+  address   = {Gold Coast, Australia},
+  isbn      = {978-3-642-37455-5},
 }
 
 @InProceedings{Tran2013a,
-  Title                    = {{Identifying Multilingual Wikipedia Articles based on Cross Language Similarity and Activity}},
-  Author                   = {Khoi-Nguyen Tran and Peter Christen},
-  Booktitle                = {Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Poster},
-  Year                     = {2013},
-
-  Address                  = {San Francisco, USA},
-
-  Quality                  = {1}
+  author    = {Khoi-Nguyen Tran and Peter Christen},
+  title     = {{Identifying Multilingual Wikipedia Articles based on Cross Language Similarity and Activity}},
+  booktitle = {Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Poster},
+  year      = {2013},
+  address   = {San Francisco, USA},
+  quality   = {1},
 }
 
 @InProceedings{Tran2015,
-  Title                    = {{Context-Aware Detection of Sneaky Vandalism on Wikipedia across Multiple Languages}},
-  Author                   = {Khoi-Nguyen Tran and Peter Christen and Scott Sanner and Lexing Xie},
-  Booktitle                = {Proceedings of the 19th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)},
-  Year                     = {2015},
-
-  Address                  = {Ho Chi Minh City, Vietnam}
+  author    = {Khoi-Nguyen Tran and Peter Christen and Scott Sanner and Lexing Xie},
+  title     = {{Context-Aware Detection of Sneaky Vandalism on Wikipedia across Multiple Languages}},
+  booktitle = {Proceedings of the 19th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)},
+  year      = {2015},
+  address   = {Ho Chi Minh City, Vietnam},
 }
 
 @InProceedings{Tran2009a,
-  Title                    = {{Short Paper: Semantic Sensor Composition}},
-  Author                   = {Khoi-Nguyen Tran and Michael Compton and Jemma Wu and Rajeev Gor\'{e}},
-  Booktitle                = {Proceedings of the 3rd International Workshop on Semantic Sensor Networks},
-  Year                     = {2009},
-
-  Address                  = {Shanghai, China}
+  author    = {Khoi-Nguyen Tran and Michael Compton and Jemma Wu and Rajeev Gor\'{e}},
+  title     = {{Short Paper: Semantic Sensor Composition}},
+  booktitle = {Proceedings of the 3rd International Workshop on Semantic Sensor Networks},
+  year      = {2009},
+  address   = {Shanghai, China},
 }
 
 @InProceedings{Tran2010,
-  Title                    = {{Detecting Network Anomalies in Mixed-Attribute Data Sets}},
-  Author                   = {Khoi-Nguyen Tran and Huidong Jin},
-  Booktitle                = {Proceedings of the 3rd International Conference on Knowledge Discovery and Data Mining (WKDD)},
-  Year                     = {2010},
-
-  Journal                  = {Knowledge Discovery and Data Mining, 2010. WKDD '10. Third International Conference on}
+  author    = {Khoi-Nguyen Tran and Huidong Jin},
+  title     = {{Detecting Network Anomalies in Mixed-Attribute Data Sets}},
+  booktitle = {Proceedings of the 3rd International Conference on Knowledge Discovery and Data Mining (WKDD)},
+  year      = {2010},
+  journal   = {Knowledge Discovery and Data Mining, 2010. WKDD '10. Third International Conference on},
 }
 
 @InProceedings{Tran2009b,
@@ -115,17 +110,15 @@
 }
 
 @InProceedings{Tran2013b,
-  Title                    = {{GeCo - An Online Personal data Generator and Corruptor}},
-  Author                   = {Khoi-Nguyen Tran and Dinusha Vatsalan and Peter Christen},
-  Booktitle                = {Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Demo},
-  Year                     = {2013},
-
-  Address                  = {San Francisco, USA},
-
-  Quality                  = {1}
+  author    = {Khoi-Nguyen Tran and Dinusha Vatsalan and Peter Christen},
+  title     = {{GeCo - An Online Personal data Generator and Corruptor}},
+  booktitle = {Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Demo},
+  year      = {2013},
+  address   = {San Francisco, USA},
+  quality   = {1},
 }
 
-@PhdThesis{Tran2015a,
+@PhdThesis{Tran2015b,
   author = {Khoi-Nguyen Tran},
   title  = {{Detecting Vandalism on Wikipedia across Multiple Languages}},
   school = {The Australian National University},
@@ -133,22 +126,22 @@
 }
 
 @Article{Christen2016,
-  author  = {Peter Christen, Ross W. Gayler, Khoi-Nguyen Tran, Jeffrey Fisher, Dinusha Vatsalan},
+  author  = {Peter Christen and Ross W. Gayler and Khoi-Nguyen Tran and Jeffrey Fisher and Dinusha Vatsalan},
   title   = {{Automatic Discovery of Abnormal Values in Large Textual Databases}},
   journal = {Journal of Data and Information Quality (JDIQ)},
   year    = {2016},
 }
 
-@InProceedings{Lau2017,
-  author    = {Jey Han Lau, Lianhua Chi, Khoi-Nguyen Tran, Trevor Cohn},
-  title     = {{End-to-end Network for Twitter Geolocation Prediction and Hashing}},
-  booktitle = {Proceedings of the The 8th International Joint Conference on Natural Language Processing (IJCNLP)},
-  year      = {2017},
+@InProceedings{Tran2018,
+  author    = {Khoi-Nguyen Tran and Jey Han Lau and Danish Contractor and Utkarsh Gupta and Bikram Sengupta and Christopher J. Butler and Mukesh Mohania},
+  title     = {{Document Chunking and Learning Objective Generation for Instruction Design}},
+  booktitle = {(under review)},
+  year      = {2018},
 }
 
 @InProceedings{Tran2018,
-  author    = {Khoi-Nguyen Tran, Jey Han Lau, Danish Contractor, Utkarsh Gupta, Bikram Sengupta, Chris J. Butler, Mukesh Mohania},
-  title     = {Document Chunking and Learning Objective Generation for Instruction Design},
+  author    = {Khoi-Nguyen Tran and Jey Han Lau and Danish Contractor and Utkarsh Gupta and Bikram Sengupta and Christopher J. Butler and Mukesh Mohania},
+  title     = {{Document Chunking and Learning Objective Generation for Instruction Design}},
   booktitle = {(under review)},
   year      = {2018},
 }
