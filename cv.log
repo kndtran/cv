@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.11)  31 MAR 2018 00:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.11)  31 MAR 2018 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -706,6 +706,12 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 345--370
 [][] 
  []
 
+
+Overfull \hbox (18.91653pt too wide) in paragraph at lines 421--422
+[]\OT1/cmr/m/n/10 Data Sci-ence, Ma-chine Learn-ing, Deep Learn-ing, Text Min-i
+ng, Nat-u-ral Lan-guage Pro-cess-ing,
+ []
+
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 436.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
@@ -747,7 +753,7 @@ Here is how much of TeX's memory you used:
  11300 multiletter control sequences out of 15000+600000
  5368 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,13n,43p,937b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,14n,43p,937b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -755,7 +761,7 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on cv.pdf (4 pages, 115048 bytes).
+Output written on cv.pdf (4 pages, 115130 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  90 compressed objects within 1 object stream
