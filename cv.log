@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.11)  8 APR 2018 14:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.7.11)  8 APR 2018 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,11 +702,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 345.
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--367
-\OT1/cmr/m/it/10 WWW:
- []
-
-
 Overfull \hbox (6.0pt too wide) in paragraph at lines 345--370
 [][] 
  []
@@ -766,7 +761,7 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on cv.pdf (4 pages, 112211 bytes).
+Output written on cv.pdf (4 pages, 112193 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  90 compressed objects within 1 object stream
