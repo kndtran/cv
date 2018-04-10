@@ -10,9 +10,8 @@
 @InProceedings{Compton2009,
   author    = {Compton, M. and Neuhaus, H. and Taylor, K. and Tran, K.N.},
   title     = {{Reasoning about Sensors and Compositions}},
-  booktitle = {Proceedings of the 2nd International Workshop on Semantic Sensor Networks},
+  booktitle = {Proceedings of the 2nd International Workshop on Semantic Sensor Networks (SSN)},
   year      = {2009},
-  address   = {Washington DC, USA},
 }
 
 @InProceedings{Noel2012,
@@ -20,28 +19,20 @@
   title     = {{New Objective Functions for Social Collaborative Filtering}},
   booktitle = {Proceedings of the 21st International World Wide Web Conference (WWW)},
   year      = {2012},
-  address   = {Lyon, France},
-  acmid     = {2187952},
-  isbn      = {978-1-4503-1229-5},
-  location  = {Lyon, France},
-  numpages  = {10},
 }
 
 @InProceedings{Sedhain2013,
-  Title                    = {{Social Affinity Filtering: Recommendation through Fine-grained Analysis of User Interactions and Activities}},
-  Author                   = {Suvash Sedhain and Scott Sanner and Lexing Xie and Riley Kidd and Khoi-Nguyen Tran and Peter Christen},
-  Booktitle                = {Proceedings of the ACM Conference on Online Social Networks (COSN)},
-  Year                     = {2013},
-
-  Address                  = {Boston, USA}
+  author    = {Suvash Sedhain and Scott Sanner and Lexing Xie and Riley Kidd and Khoi-Nguyen Tran and Peter Christen},
+  title     = {{Social Affinity Filtering: Recommendation through Fine-grained Analysis of User Interactions and Activities}},
+  booktitle = {Proceedings of the ACM Conference on Online Social Networks (COSN)},
+  year      = {2013},
 }
 
-@MastersThesis{Tran2009,
+@Misc{Tran2009,
   author = {Khoi-Nguyen Tran},
   title  = {{Semantic Sensor Composition}},
-  school = {The Australian National University},
   year   = {2009},
-  note   = {Honours Thesis. The Australian National University},
+  note   = {Honours Thesis,},
 }
 
 @InProceedings{Tran2013c,
@@ -49,7 +40,6 @@
   title     = {{Towards a Feature Rich Model for Predicting Spam Emails containing Malicious Attachments and URLs}},
   booktitle = {Proceedings of the 11th Australasian Data Mining Conference (AusDM)},
   year      = {2013},
-  address   = {Canberra, Australia},
 }
 
 @Article{Tran2015a,
@@ -64,8 +54,6 @@
   title     = {{Cross Language Prediction of Vandalism on Wikipedia Using Article Views and Revisions}},
   booktitle = {Proceedings of the 17th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)},
   year      = {2013},
-  address   = {Gold Coast, Australia},
-  isbn      = {978-3-642-37455-5},
 }
 
 @InProceedings{Tran2013a,
@@ -73,8 +61,6 @@
   title     = {{Identifying Multilingual Wikipedia Articles based on Cross Language Similarity and Activity}},
   booktitle = {Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Poster},
   year      = {2013},
-  address   = {San Francisco, USA},
-  quality   = {1},
 }
 
 @InProceedings{Tran2015,
@@ -82,7 +68,6 @@
   title     = {{Context-Aware Detection of Sneaky Vandalism on Wikipedia across Multiple Languages}},
   booktitle = {Proceedings of the 19th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)},
   year      = {2015},
-  address   = {Ho Chi Minh City, Vietnam},
 }
 
 @InProceedings{Tran2009a,
@@ -90,7 +75,6 @@
   title     = {{Short Paper: Semantic Sensor Composition}},
   booktitle = {Proceedings of the 3rd International Workshop on Semantic Sensor Networks},
   year      = {2009},
-  address   = {Shanghai, China},
 }
 
 @InProceedings{Tran2010,
@@ -98,7 +82,6 @@
   title     = {{Detecting Network Anomalies in Mixed-Attribute Data Sets}},
   booktitle = {Proceedings of the 3rd International Conference on Knowledge Discovery and Data Mining (WKDD)},
   year      = {2010},
-  journal   = {Knowledge Discovery and Data Mining, 2010. WKDD '10. Third International Conference on},
 }
 
 @InProceedings{Tran2009b,
@@ -106,7 +89,6 @@
   title     = {{Fusion of Decision Tree and Gaussian Mixture Models for Heterogeneous Data Sets}},
   booktitle = {Proceedings of the International Conference on Multimedia Technology (ICIMT)},
   year      = {2009},
-  journal   = {Information and Multimedia Technology, 2009. ICIMT '09. International Conference on},
 }
 
 @InProceedings{Tran2013b,
@@ -114,14 +96,12 @@
   title     = {{GeCo - An Online Personal data Generator and Corruptor}},
   booktitle = {Proceedings of the 22nd ACM Conference of Information and Knowledge Management (CIKM): Demo},
   year      = {2013},
-  address   = {San Francisco, USA},
-  quality   = {1},
 }
 
 @PhdThesis{Tran2015b,
   author = {Khoi-Nguyen Tran},
   title  = {{Detecting Vandalism on Wikipedia across Multiple Languages}},
-  school = {The Australian National University},
+  school = {Australian National University},
   year   = {2015},
 }
 
@@ -130,13 +110,6 @@
   title   = {{Automatic Discovery of Abnormal Values in Large Textual Databases}},
   journal = {Journal of Data and Information Quality (JDIQ)},
   year    = {2016},
-}
-
-@InProceedings{Tran2018,
-  author    = {Khoi-Nguyen Tran and Jey Han Lau and Danish Contractor and Utkarsh Gupta and Bikram Sengupta and Christopher J. Butler and Mukesh Mohania},
-  title     = {{Document Chunking and Learning Objective Generation for Instruction Design}},
-  booktitle = {(under review)},
-  year      = {2018},
 }
 
 @InProceedings{Tran2018,

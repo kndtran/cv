@@ -9,7 +9,7 @@ P.~Christen, R.~W. Gayler, K.-N. Tran, J.~Fisher, and D.~Vatsalan.
 M.~Compton, H.~Neuhaus, K.~Taylor, and K.~Tran.
 \newblock {Reasoning about Sensors and Compositions}.
 \newblock In {\em Proceedings of the 2nd International Workshop on Semantic
-  Sensor Networks}, Washington DC, USA, 2009.
+  Sensor Networks (SSN)}, 2009.
 
 \bibitem{Lau2017}
 J.~H. Lau, L.~Chi, K.-N. Tran, and T.~Cohn.
@@ -22,39 +22,38 @@ J.~Noel, S.~Sanner, K.-N. Tran, P.~Christen, L.~Xie, E.~V. Bonilla,
   E.~Abbasnejad, and N.~D. Penna.
 \newblock {New Objective Functions for Social Collaborative Filtering}.
 \newblock In {\em Proceedings of the 21st International World Wide Web
-  Conference (WWW)}, Lyon, France, 2012.
+  Conference (WWW)}, 2012.
 
 \bibitem{Tran2009}
 K.-N. Tran.
-\newblock {Semantic Sensor Composition}.
-\newblock Master's thesis, The Australian National University, 2009.
-\newblock Honours Thesis. The Australian National University.
+\newblock {Semantic Sensor Composition}, 2009.
+\newblock Honours Thesis, Australian National University.
 
 \bibitem{Tran2015b}
 K.-N. Tran.
 \newblock {\em {Detecting Vandalism on Wikipedia across Multiple Languages}}.
-\newblock PhD thesis, The Australian National University, 2015.
+\newblock PhD thesis, Australian National University, 2015.
 
 \bibitem{Tran2013c}
 K.-N. Tran, M.~Alazab, and R.~Broadhurst.
 \newblock {Towards a Feature Rich Model for Predicting Spam Emails containing
   Malicious Attachments and URLs}.
 \newblock In {\em Proceedings of the 11th Australasian Data Mining Conference
-  (AusDM)}, Canberra, Australia, 2013.
+  (AusDM)}, 2013.
 
 \bibitem{Tran2013}
 K.-N. Tran and P.~Christen.
 \newblock {Cross Language Prediction of Vandalism on Wikipedia Using Article
   Views and Revisions}.
 \newblock In {\em Proceedings of the 17th Pacific-Asia Conference on Knowledge
-  Discovery and Data Mining (PAKDD)}, Gold Coast, Australia, 2013.
+  Discovery and Data Mining (PAKDD)}, 2013.
 
 \bibitem{Tran2013a}
 K.-N. Tran and P.~Christen.
 \newblock {Identifying Multilingual Wikipedia Articles based on Cross Language
   Similarity and Activity}.
 \newblock In {\em Proceedings of the 22nd ACM Conference of Information and
-  Knowledge Management (CIKM): Poster}, San Francisco, USA, 2013.
+  Knowledge Management (CIKM): Poster}, 2013.
 
 \bibitem{Tran2015a}
 K.-N. Tran and P.~Christen.
@@ -68,13 +67,13 @@ K.-N. Tran, P.~Christen, S.~Sanner, and L.~Xie.
 \newblock {Context-Aware Detection of Sneaky Vandalism on Wikipedia across
   Multiple Languages}.
 \newblock In {\em Proceedings of the 19th Pacific-Asia Conference on Knowledge
-  Discovery and Data Mining (PAKDD)}, Ho Chi Minh City, Vietnam, 2015.
+  Discovery and Data Mining (PAKDD)}, 2015.
 
 \bibitem{Tran2009a}
 K.-N. Tran, M.~Compton, J.~Wu, and R.~Gor\'{e}.
 \newblock {Short Paper: Semantic Sensor Composition}.
 \newblock In {\em Proceedings of the 3rd International Workshop on Semantic
-  Sensor Networks}, Shanghai, China, 2009.
+  Sensor Networks}, 2009.
 
 \bibitem{Tran2009b}
 K.-N. Tran and H.~Jin.
@@ -100,6 +99,6 @@ K.-N. Tran, J.~H. Lau, D.~Contractor, U.~Gupta, B.~Sengupta, C.~J. Butler, and
 K.-N. Tran, D.~Vatsalan, and P.~Christen.
 \newblock {GeCo - An Online Personal data Generator and Corruptor}.
 \newblock In {\em Proceedings of the 22nd ACM Conference of Information and
-  Knowledge Management (CIKM): Demo}, San Francisco, USA, 2013.
+  Knowledge Management (CIKM): Demo}, 2013.
 
 \end{thebibliography}

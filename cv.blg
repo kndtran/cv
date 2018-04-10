@@ -5,37 +5,37 @@ The style file: abbrv.bst
 Database file #1: cv.bib
 You've used 16 entries,
             2118 wiz_defined-function locations,
-            589 strings with 7334 characters,
-and the built_in function-call counts, 4934 in all, are:
-= -- 438
+            580 strings with 7035 characters,
+and the built_in function-call counts, 4913 in all, are:
+= -- 410
 > -- 316
 < -- 0
 + -- 124
 - -- 108
-* -- 311
-:= -- 883
-add.period$ -- 49
+* -- 302
+:= -- 859
+add.period$ -- 48
 call.type$ -- 16
 change.case$ -- 101
 chr.to.int$ -- 0
 cite$ -- 16
-duplicate$ -- 205
-empty$ -- 383
+duplicate$ -- 204
+empty$ -- 407
 format.name$ -- 108
-if$ -- 1011
+if$ -- 1008
 int.to.chr$ -- 0
 int.to.str$ -- 16
 missing$ -- 14
-newline$ -- 84
+newline$ -- 83
 num.names$ -- 32
-pop$ -- 147
+pop$ -- 154
 preamble$ -- 1
 purify$ -- 86
 quote$ -- 0
-skip$ -- 98
+skip$ -- 115
 stack$ -- 0
 substring$ -- 80
-swap$ -- 19
+swap$ -- 28
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
@@ -43,4 +43,4 @@ type$ -- 64
 warning$ -- 0
 while$ -- 32
 width$ -- 18
-write$ -- 174
+write$ -- 163
