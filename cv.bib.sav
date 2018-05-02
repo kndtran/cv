@@ -115,7 +115,7 @@
 @InProceedings{Tran2018,
   author    = {Khoi-Nguyen Tran and Jey Han Lau and Danish Contractor and Utkarsh Gupta and Bikram Sengupta and Christopher J. Butler and Mukesh Mohania},
   title     = {{Document Chunking and Learning Objective Generation for Instruction Design}},
-  booktitle = {Proceedings of the 11th International Conference on Education Data Mining (EDM)},
+  booktitle = {P},
   year      = {2018},
 }
 
