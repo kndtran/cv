@@ -115,8 +115,81 @@
 @InProceedings{Tran2018,
   author    = {Khoi-Nguyen Tran and Jey Han Lau and Danish Contractor and Utkarsh Gupta and Bikram Sengupta and Christopher J. Butler and Mukesh Mohania},
   title     = {{Document Chunking and Learning Objective Generation for Instruction Design}},
-  booktitle = {(under review)},
+  booktitle = {Proceedings of the 11th International Conference on Education Data Mining (EDM)},
   year      = {2018},
+}
+
+@Patent{Tran2018c,
+  nationality = {United States of America},
+  number      = {16/146620},
+  year        = {2018},
+  yearfiled   = {2018},
+  author      = {Khoi-Nguyen Dao Tran and Shaila Pervin and Jason Jingshi Li and Mukesh Kumar Mohania and Jey Han Lau and Will Dubyak},
+  title       = {NATURAL LANGUAGE PROCESSOR FOR COGNITIVELY GENERATING CONTEXTUAL FILLER DESIGNED TO KEEP USERS ENGAGED},
+  assignee    = {International Business Machines Corporation},
+}
+
+@Patent{Tran2018a,
+  nationality = {United States of America},
+  number      = {16/147911},
+  year        = {2018},
+  yearfiled   = {2018},
+  author      = {Khoi-Nguyen Dao Tran},
+  title       = {BALLPOINT DRY-ERASE MARKER},
+  assignee    = {International Business Machines Corporation},
+}
+
+@Patent{Tran2018b,
+  nationality = {United States of America},
+  number      = {16/147911},
+  year        = {2018},
+  yearfiled   = {2018},
+  author      = {Khoi-Nguyen Dao Tran and Simon Harris and Mukesh Kumar Mohania},
+  title       = {CACHING METHOD AND SYSTEM FOR LARGE OBJECTS ON A CORPORATE NETWORK USING THE SEMANTIC UNDERSTANDING OF THE OBJECTS AND SOCIAL INFORMATION OF EMPLOYEES},
+  assignee    = {International Business Machines Corporation},
+}
+
+@Patent{Tran2018d,
+  nationality = {United States of America},
+  number      = {(to appear)},
+  year        = {2018},
+  yearfiled   = {2018},
+  author      = {Khoi-Nguyen Dao Tran and Ying Xu and Nebula Alam and Christopher John Butler},
+  title       = {DISTRIBUTION MANAGEMENT FOR PUBLIC TRANSIT VEHICLES},
+  assignee    = {International Business Machines Corporation},
+}
+
+@Misc{Tran2018p2,
+  author = {Khoi-Nguyen Dao Tran and Nebula Alam and Simon Harris and Shaila Pervin},
+  title  = {Method and System for Monitoring and Predicting near Future Events based on Distance from a User using Contextual Data},
+  year   = {2018},
+}
+
+@Misc{Tran2018p1,
+  author = {Khoi-Nguyen Dao Tran},
+  title  = {Method and System for Automating Crop Monitoring and Management in Urban or Small-Scale Farm Management Using Mini Spidercams},
+  year   = {2018},
+}
+
+@Misc{Tran2018p3,
+  author = {Nebula Alam and Khoi-Nguyen Dao Tran and Simon Harris},
+  title  = {Method and System for Automatically Detecting an Emergency Situation to Contact Emergency Services},
+  year   = {2018},
+}
+
+@Misc{Tran2018p4,
+  author = {Simon Harris and Khoi-Nguyen Dao Tran and Shaila Pervin},
+  title  = {System and Method to control children's multi-media playlists based on crowd sourced parental feedback},
+  year   = {2018},
+}
+
+@Patent{,
+  number    = {16/201432},
+  year      = {2018},
+  yearfiled = {2018},
+  author    = {Khoi-Nguyen Dao Tran and Ying Xu and Nebula Alam and Christopher John Butler},
+  title     = {DISTRIBUTION MANAGEMENT FOR PUBLIC TRANSIT VEHICLES},
+  assignee  = {International Business Machines Corporation},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
