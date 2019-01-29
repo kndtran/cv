@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  27 NOV 2018 13:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  29 JAN 2019 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -370,12 +370,12 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=12.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
 * \marginparwidth=86.72377pt
 * \marginparsep=3.61371pt
 * \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -391,20 +391,12 @@ Package lastpage Info: Please have a look at the pageslts package at
 \rcollength=\skip60
 \spacewidth=\skip61
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 345.
+(Font)              <7> on input line 345.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 345.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 345.
+(Font)              <5> on input line 345.
 
 Overfull \hbox (6.0pt too wide) in paragraph at lines 345--371
 [][] 
- []
-
-
-Overfull \hbox (18.98796pt too wide) in paragraph at lines 422--423
-[]\OT1/cmr/m/n/12 Data Sci-ence, Ma-chine Learn-ing, Text Min-ing, AI for Busi-
-ness, Cy-ber-crime. 
  []
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 439.
@@ -412,114 +404,67 @@ LaTeX Font Info:    Try loading font information for OMS+cmr on input line 439.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 439.
 
-Overfull \hbox (4.63815pt too wide) in paragraph at lines 443--444
-[]\OT1/cmr/m/n/12 Developed a chat-bot in-ter-ac-tion in-ter-face with unique b
-ack-ground
+Overfull \hbox (6.78696pt too wide) in paragraph at lines 443--444
+[]\OT1/cmr/m/n/10 Developed a chat-bot in-ter-ac-tion in-ter-face with unique b
+ack-ground co-or-di-na-tion
  []
 
 
-Overfull \hbox (11.64919pt too wide) in paragraph at lines 443--444
-\OT1/cmr/m/n/12 co-or-di-na-tion meth-ods be-tween the front-end and Wat-son As
--sis-tant. 
+Overfull \hbox (0.53693pt too wide) in paragraph at lines 444--445
+[]\OT1/cmr/m/n/10 Developed text an-a-lyt-ics pipelines for clients in Wat-son 
+Stu-dio and Ana-conda. 
  []
 
 
-Overfull \hbox (1.67012pt too wide) in paragraph at lines 459--460
-[]\OT1/cmr/m/n/12 Transitioned and im-proved past re-search com-po-nents for bu
-si-ness
+Overfull \hbox (16.37024pt too wide) in paragraph at lines 458--459
+[]\OT1/cmr/m/n/10 Developed tech-niques for chunk-ing doc-u-ments and gen-er-at
+-ing learn-ing ob-jec-tives.
  []
 
 
-Overfull \hbox (21.1227pt too wide) in paragraph at lines 459--460
-\OT1/cmr/m/n/12 teams, in-tro-duc-ing a new ma-chine learn-ing com-po-nent and 
-val-i-da-tion
+Overfull \hbox (9.0646pt too wide) in paragraph at lines 460--461
+[]\OT1/cmr/m/n/10 Other re-search work in-cludes ge-olo-ca-tion of Twit-ter twe
+ets, de-tect-ing van-dal-ism
  []
 
 
-Overfull \hbox (12.25478pt too wide) in paragraph at lines 459--460
-\OT1/cmr/m/n/12 and stan-dard-iz-ing APIs for ac-cess with JARs and REST-ful se
-r-vices. 
+Overfull \hbox (5.70361pt too wide) in paragraph at lines 483--484
+[]\OT1/cmr/m/n/10 Developed code from an-a-lysts' ob-ser-va-tions and busi-ness
+ knowl-edge, pro-duc-ing
  []
 
 
-Overfull \hbox (20.2741pt too wide) in paragraph at lines 460--461
-[]\OT1/cmr/m/n/12 Other re-search work in-cludes ge-olo-ca-tion of Twit-ter twe
-ets, de-tect-ing
- []
-
-
-Overfull \hbox (16.1922pt too wide) in paragraph at lines 483--484
-[]\OT1/cmr/m/n/12 Developed code from an-a-lysts' ob-ser-va-tions and busi-ness
- knowl-edge,
+Overfull \hbox (15.81473pt too wide) in paragraph at lines 515--516
+[]\OT1/cmr/m/n/10 Projects: In-ves-ti-gat-ing Ma-li-cious Spam Emails, His-tory
+ of Cy-ber-crime Ac-tiv-i-ties. 
  []
 
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (27.2421pt too wide) in paragraph at lines 515--516
-[]\OT1/cmr/m/n/12 Projects: In-ves-ti-gat-ing Ma-li-cious Spam Emails, His-tory
- of Cy-ber-crime
- []
-
-
-Overfull \hbox (41.97665pt too wide) in paragraph at lines 516--524
-[]\OT1/cmr/m/n/12 Developed a novel de-tec-tion tech-nique for ma-li-cious con-
-tent (at-tach-ments
- []
-
-
-Overfull \hbox (16.44499pt too wide) in paragraph at lines 538--540
-[]\OT1/cmr/m/n/12 Project: New Ob-jec-tive Func-tions for So-cial Col-lab-o-ra-
-tive Fil-ter-ing. 
- []
-
-
-Overfull \hbox (35.67401pt too wide) in paragraph at lines 540--541
-\OT1/cmr/m/n/12 rec-om-mend con-tent from our novel col-lab-o-ra-tive fil-ter-i
-ng al-go-rithms. 
- []
-
-
-Overfull \hbox (6.8521pt too wide) in paragraph at lines 544--545
-[]\OT1/cmr/m/n/12 Developed a user in-ter-face for a novel syn-thetic data gen-
-er-a-tion
+Overfull \hbox (4.45358pt too wide) in paragraph at lines 544--545
+\OT1/cmr/m/n/10 that mim-ics real-world er-rors through a va-ri-ety of data cor
+-rup-tion meth-ods. 
  []
 
 Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. [2]
-Overfull \hbox (0.35759pt too wide) in paragraph at lines 708--709
-[]\OT1/cmr/m/n/12 Experienced: Scikit-learn, JQuery, Flask, MySQL, dplyr / tidy
--verse,
+Excluding 'comment' comment.
+Overfull \hbox (7.49423pt too wide) in paragraph at lines 708--709
+\OT1/cmr/m/n/10 PDF-Box, GitHub, Zen-Hub, IBM Cloud, La-TeX, Word/Excel/Powerpo
+int, Ubuntu
  []
 
-
-Overfull \hbox (72.50421pt too wide) in paragraph at lines 708--709
-\OT1/cmr/m/n/12 Eclipse, PDF-Box, GitHub, Zen-Hub, IBM Cloud, La-TeX, Word/Exce
-l/Powerpoint,
+Excluding 'comment' comment. Excluding 'comment' comment. [2]
+Excluding 'comment' comment. Excluding 'comment' comment. (./cv.bbl
+Underfull \hbox (badness 1418) in paragraph at lines 21--26
+[]\OT1/cmr/m/n/10 J. Noel, S. San-ner, K.-N. Tran, P. Chris-ten, L. Xie, E. V. 
+Bonilla,
  []
 
-
-Overfull \hbox (0.27982pt too wide) in paragraph at lines 709--710
-[]\OT1/cmr/m/n/12 Familiar: Ten-sor-flow, NumPy, Docker, Ku-ber-netes, NLTK, St
-an-ford
- []
-
-Excluding 'comment' comment. Excluding 'comment' comment.
-Overfull \hbox (18.72136pt too wide) in paragraph at lines 838--840
-[]\OT1/cmr/m/n/12 Volunteer and Pres-i-dent, ANU Com-puter Sci-ence Stu-dents' 
-As-so-ci-a-tion,
- []
-
-Excluding 'comment' comment. Excluding 'comment' comment. [3] (./cv.bbl
-Underfull \hbox (badness 1681) in paragraph at lines 4--7
-\OT1/cmr/m/n/12 Au-to-matic Dis-cov-ery of Ab-nor-mal Val-ues in Large Tex-tual
-
- []
-
-) Excluding 'comment' comment. 
+[3]) Excluding 'comment' comment. 
 AED: lastpage setting LastPage
 [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1040.
@@ -530,23 +475,24 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1040.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1040.
  ) 
 Here is how much of TeX's memory you used:
- 7530 strings out of 492649
- 110580 string characters out of 6129621
- 227232 words of memory out of 5000000
- 11320 multiletter control sequences out of 15000+600000
- 8105 words of font info for 29 fonts, out of 8000000 for 9000
+ 7527 strings out of 492649
+ 110565 string characters out of 6129621
+ 229399 words of memory out of 5000000
+ 11317 multiletter control sequences out of 15000+600000
+ 5368 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,14n,43p,937b,633s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on cv.pdf (4 pages, 90276 bytes).
+ 37i,13n,43p,937b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on cv.pdf (4 pages, 112976 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
+ 104 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 31 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
