@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  30 JAN 2019 11:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  13 FEB 2019 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -407,59 +407,53 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 439.
 
-Overfull \hbox (6.78696pt too wide) in paragraph at lines 443--444
-[]\OT1/cmr/m/n/10 Developed a chat-bot in-ter-ac-tion in-ter-face with unique b
-ack-ground co-or-di-na-tion
+Overfull \hbox (8.14803pt too wide) in paragraph at lines 461--462
+[]\OT1/cmr/m/n/10 Developed var-i-ous end-to-end ma-chine/deep learn-ing so-lu-
+tions for un-struc-tured
  []
 
 
-Overfull \hbox (0.53693pt too wide) in paragraph at lines 444--445
-[]\OT1/cmr/m/n/10 Developed text an-a-lyt-ics pipelines for clients in Wat-son 
-Stu-dio and Ana-conda. 
+Overfull \hbox (1.62021pt too wide) in paragraph at lines 462--463
+[]\OT1/cmr/m/n/10 Transitioned in-her-ited re-search as-sets from Wat-son Ed-u-
+ca-tion into pro-duc-tion
  []
 
 
-Overfull \hbox (16.37024pt too wide) in paragraph at lines 458--459
-[]\OT1/cmr/m/n/10 Developed tech-niques for chunk-ing doc-u-ments and gen-er-at
--ing learn-ing ob-jec-tives.
+Overfull \hbox (0.77762pt too wide) in paragraph at lines 462--463
+\OT1/cmr/m/n/10 orig-i-nal pub-lished state-of-the-art re-search re-sults. Sim-
+pli-fied and par-al-lelized
  []
 
 
-Overfull \hbox (9.0646pt too wide) in paragraph at lines 460--461
-[]\OT1/cmr/m/n/10 Other re-search work in-cludes ge-olo-ca-tion of Twit-ter twe
-ets, de-tect-ing van-dal-ism
- []
-
-
-Overfull \hbox (5.70361pt too wide) in paragraph at lines 483--484
-[]\OT1/cmr/m/n/10 Developed code from an-a-lysts' ob-ser-va-tions and busi-ness
- knowl-edge, pro-duc-ing
- []
-
-
-Overfull \hbox (15.81473pt too wide) in paragraph at lines 515--516
-[]\OT1/cmr/m/n/10 Projects: In-ves-ti-gat-ing Ma-li-cious Spam Emails, His-tory
- of Cy-ber-crime Ac-tiv-i-ties. 
+Overfull \hbox (4.87038pt too wide) in paragraph at lines 490--491
+\OT1/cmr/m/n/10 pro-duc-ing data vi-su-al-iza-tions and au-to-mated on-demand r
+e-ports in pro-duc-tion
  []
 
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (4.45358pt too wide) in paragraph at lines 544--545
+Overfull \hbox (15.81473pt too wide) in paragraph at lines 524--525
+[]\OT1/cmr/m/n/10 Projects: In-ves-ti-gat-ing Ma-li-cious Spam Emails, His-tory
+ of Cy-ber-crime Ac-tiv-i-ties. 
+ []
+
+
+Overfull \hbox (4.45358pt too wide) in paragraph at lines 553--554
 \OT1/cmr/m/n/10 that mim-ics real-world er-rors through a va-ri-ety of data cor
 -rup-tion meth-ods. 
  []
 
 Excluding 'comment' comment. Excluding 'comment' comment.
 Excluding 'comment' comment.
-Overfull \hbox (13.37025pt too wide) in paragraph at lines 709--710
+Overfull \hbox (13.37025pt too wide) in paragraph at lines 718--719
 []\OT1/cmr/m/n/10 Familiar: Ten-sor-flow, Docker, Ku-ber-netes, NLTK, Stan-ford
  NLP, Wat-son As-sis-tant,
  []
 
 Excluding 'comment' comment. Excluding 'comment' comment.
-Excluding 'comment' comment. Excluding 'comment' comment. [2]
-Excluding 'comment' comment. (./cv.bbl
+Excluding 'comment' comment. [2] Excluding 'comment' comment.
+Excluding 'comment' comment. Excluding 'comment' comment. (./cv.bbl
 Underfull \hbox (badness 1418) in paragraph at lines 21--26
 []\OT1/cmr/m/n/10 J. Noel, S. San-ner, K.-N. Tran, P. Chris-ten, L. Xie, E. V. 
 Bonilla,
@@ -468,12 +462,12 @@ Bonilla,
 [3]) Excluding 'comment' comment. 
 AED: lastpage setting LastPage
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1064.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1064.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1088.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1088.
  (./cv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1064.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1064.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1064.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1088.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1088.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1088.
  ) 
 Here is how much of TeX's memory you used:
  7526 strings out of 492649
@@ -482,7 +476,7 @@ Here is how much of TeX's memory you used:
  11317 multiletter control sequences out of 15000+600000
  5368 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,13n,43p,937b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,13n,43p,937b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -490,7 +484,7 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on cv.pdf (4 pages, 114184 bytes).
+Output written on cv.pdf (4 pages, 113077 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream
