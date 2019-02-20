@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  13 FEB 2019 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  20 FEB 2019 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -425,9 +425,15 @@ pli-fied and par-al-lelized
  []
 
 
-Overfull \hbox (4.87038pt too wide) in paragraph at lines 490--491
-\OT1/cmr/m/n/10 pro-duc-ing data vi-su-al-iza-tions and au-to-mated on-demand r
-e-ports in pro-duc-tion
+Overfull \hbox (5.70361pt too wide) in paragraph at lines 490--491
+[]\OT1/cmr/m/n/10 Developed code from an-a-lysts' ob-ser-va-tions and busi-ness
+ knowl-edge, pro-duc-ing
+ []
+
+
+Overfull \hbox (22.14816pt too wide) in paragraph at lines 490--491
+\OT1/cmr/m/n/10 data vi-su-al-iza-tions and au-to-mated on-demand re-ports in p
+ro-duc-tion en-vi-ron-ments. 
  []
 
 [1
@@ -476,7 +482,7 @@ Here is how much of TeX's memory you used:
  11317 multiletter control sequences out of 15000+600000
  5368 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,13n,43p,937b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,13n,43p,937b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -484,7 +490,7 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on cv.pdf (4 pages, 113077 bytes).
+Output written on cv.pdf (4 pages, 113057 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream
