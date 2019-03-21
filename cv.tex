@@ -212,7 +212,7 @@
 % Usage: \section{section name}
 \renewcommand{\section}[1]{\pagebreak[3]%
     \hyphenpenalty=10000%
-    \vspace{1.3\baselineskip}%
+    \vspace{1.0\baselineskip}%
     \phantomsection\addcontentsline{toc}{section}{#1}%
     \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
     \vspace{-\baselineskip}\par}
@@ -324,7 +324,9 @@
 \begin{document}
 \makeheading{CV: Khoi-Nguyen Tran}
 
-\section{Contact Information}
+\halfblankline
+
+\section{Contact}
 
 % NOTE: Mind where the & separators and \\ breaks are in the following
 %       table. Table is one row made up of three parboxes. The left
@@ -352,13 +354,13 @@
 \parbox{\textwidth-\rcollength-\spacewidth}{%
 %Postdoctoral Researcher\\
 IBM Research Australia\\
-Level 22, 60 City Road\\
+%Level 22, 60 City Road\\
 Southbank, VIC 3006\\
 Australia}
 
 % Cheesy perforated vertical bar between boxes
 % Shorten by removing \spacechar's
-& \parbox{\spacewidth}{\centering \spacechar\\\spacechar\\\spacechar\\\spacechar\\\spacechar} &
+& \parbox{\spacewidth}{\centering \spacechar\\\spacechar\\\spacechar\\\spacechar} &
 
 % Non-snail-mail contact information
 \parbox{\rcollength}{%
@@ -405,6 +407,10 @@ Australia}
 % \item More information and auxiliary documents can be found at\\\url{http://www.tedpavlic.com/facjobsearch/}
 % \end{innerlist}
 
+\section{Objective}
+
+To apply my research skills in industry by developing practical AI solutions for business.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -412,10 +418,6 @@ Australia}
 %\section{Research Interests}
 
 %\textbf{Detection of malicious activities in online environments:} data mining, machine learning, big data, knowledge generation, vandalism on Wikipedia, malicious spam emails, and current trends and issues in cybercrime.
-
-\section{Objective}
-
-To apply my research skills in industry by developing practical AI solutions for business.
 
 \section{Research Interests}
 
@@ -436,38 +438,42 @@ Data Science, Machine Learning, Deep Learning, Text Mining, AI for Business, Cyb
 \halfblankline
 
 \begin{innerlist}
-	\item Research Scientist. Cognitive Analytics. \hfill {Jun 2018 -- Current}
+	\item Research Scientist. Cognitive Analytics. \hfill {2018 -- Current}
 	%\item[] Cognitive Industries
 	\begin{innerlist}
 		%\item[$-$] Manager: Dr. Christopher J. Butler.
-    \item[$-$] Leading research into machine understanding of USPTO patents. Ongoing and expected outputs are analytical tools using text mining, NLP, machine learning, and deep learning methods, with UIs and APIs to aid inventors and evaluators in their invention review process.
-    \item[$-$] Led a client project on prediction of human effort in asset creation for business processes. Features end-to-end machine learning pipelines with a graph representational model using structured data, and focusing on paralellism and extensibility in hyper-parameter search.
-		\item[$-$] Led development of an online chatbot service proof-of-concept for collecting financial documents for analysis. Features background coordination methods with Watson Assistant services for triggering front-end UI functionalities.
+    \item[$-$] Leading research into understanding patents using text mining and machine learning. Coordinating research tasks amongst 5 people in 3 teams with mixed development in R, Python, Spark, and React.
+    \item[$-$] Led development of end-to-end machine learning and chatbot proof-of-concept pipelines for financial services clients.
+    %\item[$-$] Leading research into machine understanding of USPTO patents. Ongoing and expected outputs are analytical tools using text mining, NLP, machine learning, and deep learning methods, with UIs and APIs to aid inventors and evaluators in their invention review process.
+    %\item[$-$] Led a client project on prediction of human effort in asset creation for business processes. Features end-to-end machine learning pipelines with a graph representational model using structured data, and focusing on (multi-core) parallelism and extensibility in hyper-parameter search.
+		%\item[$-$] Led development of an online chatbot service proof-of-concept for collecting financial documents for analysis. Features background coordination methods with Watson Assistant services for triggering front-end UI functionalities.
     %\item[$-$] Developed text analytics pipelines for clients in Watson Studio and Anaconda.
     %\item[$-$] Other research work includes analysis of USPTO patents and detection of malicious URLs.
-    \item[$-$] Publications: 2 pending review.
-    \item[$-$] Patents: 3 filed. Reached 1st plateau.
-    \item[$-$] Defensive Patent Publications: 5 published.
+    %\item[$-$] Contributed to research on malicious domain detection using only text.
+    \item[$-$] Publications: 2 under review.
+    \item[$-$] Patents: 3 filed. 5 defensive patent publications.
 		%\item[$-$] 2 publications.
   \end{innerlist}
 
   \halfblankline
 
-	\item Postdoctoral Research Scientist. Cognitive Analytics. \hfill {Jun 2016 -- Jun 2018}
+	\item Postdoctoral Research Scientist. Cognitive Analytics. \hfill {2016 -- 2018}
 	%\item[] Cognitive Industries
 	\begin{innerlist}
 		%\item[$-$] Manager: Dr. Christopher J. Butler.
-    \item[$-$] Developed document chunking solutions and classification models for IBM Global Process Services (for Watson Education). Research work recognized as division led expertise and is one of the core features of an IBM offer (C3 -- http://microsite-us.mybluemix.net/).
-    \item[$-$] Developed various end-to-end machine/deep learning solutions for unstructured text data for Watson Education. Particularly, document classification to improve unsupervised document alignment models.
-    \item[$-$] Transitioned inherited research assets from Watson Education into production ready API services deployed on the IBM Cloud. Replicated and improved original published state-of-the-art research results. Simplified and parallelized assets for scalable generation of document alignment models.
-    \item[$-$] Contributed to the development of a novel deep learning architecture for geolocation of Twitter tweets.
+    \item[$-$] Led development of document chunking and end-to-end machine learning solutions for Watson Education. Document chunking is now one of the core features of an IBM offer (C3 -- http://microsite-us.mybluemix.net/).
+    \item[$-$] Identified problems with Watson Education's inherited research assets and developed solutions meeting their production needs of high prediction scores, parallelization, and micro-service APIs.
+    %\item[$-$] Developed document chunking solutions and classification models for IBM Global Process Services (for Watson Education). Research work recognized as division led expertise and was part of an A-level accomplishment. Document chunking is now one of the core features of an IBM offer (C3 -- http://microsite-us.mybluemix.net/).
+    %\item[$-$] Developed various end-to-end machine/deep learning solutions for unstructured text data for Watson Education. Particularly, document classification to improve unsupervised document alignment models.
+    %\item[$-$] Transitioned inherited research assets from Watson Education into production ready API services deployed on the IBM Cloud. Replicated and improved original published state-of-the-art research results. Simplified and parallelized assets for scalable generation of document alignment models.
+    %\item[$-$] Contributed to the development of a novel deep learning architecture for geolocation of Twitter tweets.
     %\item[$-$] Developed end-to-end machine learning solutions for internal business units, from concept to production ready packages.
 		%\item[$-$] Developed techniques for chunking documents and generating learning objectives. Work recognised as division led expertise.
 		%\item[$-$] Transitioned and improved past research components for business teams, introducing a new machine learning component and validation experiments, simplifying and parallelizing execution pipelines, and standardizing APIs for access with JARs and RESTful services.
 		%\item[$-$] Other research work includes geolocation of Twitter tweets, detecting vandalism on Wikipedia, and predicting the price of an item.
 		\item[$-$] Publications: \cite{Lau2017}, \cite{Tran2018}.
-    \item[$-$] Patents: 2 filed. %\cite{Tran2018a} (pending), \cite{Tran2018b} (pending).
-    \item[$-$] Defensive Patent Publications: 3 published.
+    \item[$-$] Patents: 2 filed. 3 defensive patent publications. %\cite{Tran2018a} (pending), \cite{Tran2018b} (pending).
+    %\item[$-$] Defensive Patent Publications: 3 published.
 		%\item[$-$] 2 publications.
   \end{innerlist}
 \end{innerlist}
@@ -483,15 +489,13 @@ Data Science, Machine Learning, Deep Learning, Text Mining, AI for Business, Cyb
 \halfblankline
 
 \begin{innerlist}
-	\item Data Scientist. Research and Development Team. \hfill {May 2015 -- Jun 2016}
+	\item Data Scientist. Research and Development Team. \hfill {2015 -- 2016}
 	%\item[] Cognitive Industries
 	\begin{innerlist}
-		\item[$-$] Developed modelling, profiling, and text analytics solutions in R and SQL.
-		\item[$-$] Developed code from analysts' observations and business knowledge, producing data visualizations and automated on-demand reports in production environments.
+    \item[$-$] Developed modelling, profiling, and text analytics solutions for analysts in R and SQL.
+    %\item[$-$] Developed code from analysts' observations and business knowledge, producing data visualizations and automated on-demand reports in production environments.
     \end{innerlist}
 \end{innerlist}
-
-\halfblankline
 
 \halfblankline
 
@@ -516,7 +520,7 @@ Data Science, Machine Learning, Deep Learning, Text Mining, AI for Business, Cyb
 
 	%\halfblankline
 
-	\item Research Assistant \& Co-founder. Cybercrime Observatory. \hfill {Mar 2013 -- May 2015}
+	\item Research Assistant \& Co-founder. Cybercrime Observatory. \hfill {2013 -- 2015}
 	%\item[] \href{http://regnet.anu.edu.au/content/anu-cybercrime-observatory}{ANU Cybercrime Observatory}
 	%\item[] \href{http://regnet.anu.edu.au/}{Regulatory Institutions Network (RegNet)}
 	\begin{innerlist}
@@ -536,7 +540,7 @@ Data Science, Machine Learning, Deep Learning, Text Mining, AI for Business, Cyb
 
 	\halfblankline
 
-	\item Research Assistant. Research School of Computer Science. \hfill {Jan 2011 -- May 2015}
+	\item Research Assistant. Research School of Computer Science. \hfill {2011 -- 2015}
 	%\item[] \href{http://cs.anu.edu.au/}{Research School of Computer Science}
 	\begin{innerlist}
 		%\item[$-$] Supervisors: Prof. Peter Christen, Dr. Scott Sanner, Dr. Lexing Xie.
@@ -662,12 +666,12 @@ Data Science, Machine Learning, Deep Learning, Text Mining, AI for Business, Cyb
 
 \section{Education}
 
-Australian National University
+\textbf{Australian National University}
 
 \halfblankline
 
 \begin{innerlist}
-\item Ph.D. in Engineering and Computer Science. \hfill{Feb 2010 -- Jul 2015}
+\item Ph.D. in Engineering and Computer Science. \hfill{2010 -- 2015}
 	\begin{innerlist}
 		\item[$-$] Area of Study: Machine Learning Applications.
 		\item[$-$] Thesis Title: \emph{Detecting Vandalism on Wikipedia across Multiple Languages}.
@@ -678,7 +682,7 @@ Australian National University
 
 \halfblankline
 
-\item Bachelor of Computer Science, with First Class Honours. \hfill{Feb 2006 -- Dec 2009}
+\item Bachelor of Computer Science, with First Class Honours. \hfill{2006 -- 2009}
 	\begin{innerlist}
 		\item[$-$] GPA: 6.75 / 7. Overall course average of High Distinction.
 		\item[$-$] Honours Thesis Topic: \emph{Semantic Sensor Composition}.
@@ -714,8 +718,8 @@ Languages:
 Software:
 %
 \begin{innerlist}
-	\item Experienced: Scikit-learn, Anonconda, pandas, numpy, dplyr/tidyverse, JQuery, Flask, MySQL, Eclipse, PDFBox, GitHub, ZenHub, IBM Cloud, LaTeX, Word, Excel, Powerpoint, Ubuntu Linux, Windows, macOS.
-	\item Familiar: Tensorflow, Docker, Kubernetes, NLTK, Stanford NLP, Watson Assistant, Watson Studio.
+	\item Experienced: Scikit-learn, Anaconda, pandas, numpy, dplyr/tidyverse, JQuery, Flask, MySQL, Eclipse, PDFBox, GitHub, ZenHub, IBM Cloud, LaTeX, Word, Excel, Powerpoint, Ubuntu Linux, Windows, macOS.
+	\item Familiar: Tensorflow, Docker, Kubernetes, NLTK, Stanford NLP, Watson Assistant (chatbot).
 \end{innerlist}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1052,11 +1056,9 @@ Available upon request.
 
 \section{Cited Publications}
 
-Full list available at Google Scholar:
+Metrics from Google Scholar (Mar 20): 279 citations, h-index: 8, i10-index: 7.
 
 \url{http://scholar.google.com.au/citations?user=ihFcT5QAAAAJ}
-
-As of Jan 31: 275 citations, h-index: 8, i10-index: 8.
 
 \halfblankline
 

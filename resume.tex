@@ -1,8 +1,8 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% NOTE: If you find that it says                                     %%
 %%                                                                    %%
 %%                           1 of ??                                  %%
@@ -13,9 +13,9 @@
 %% of the document. The AUX file will be generated on the first run   %%
 %% of LaTeX and used on the second run to fill in all of the          %%
 %% references.                                                        %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% NOTE: If you are getting compilation errors referring to list      %%
 %%       definitions that don't match, you may need to upgrade to a   %%
 %%       newer version of the enumitem package. Try going to:         %%
@@ -26,14 +26,12 @@
 %%       the same directory as your CV. So long as there are no other %%
 %%       conflicts with older packages on your system, hopefully that %%
 %%       will fix your compilation problems.                          %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Don't like 10pt? Try 11pt or 12pt
 \documentclass[10pt]{article}
-
-\usepackage[bookmarks=false]{hyperref}
 
 % The automated optical recognition software used to digitize resume
 % information works best with fonts that do not have serifs. This
@@ -42,6 +40,7 @@
 %\usepackage{times}
 %\renewcommand{\familydefault}{\sfdefault}
 
+\usepackage[bookmarks=false]{hyperref}
 \usepackage{comment}
 \usepackage{pdfpages}
 \usepackage[utf8]{inputenc}
@@ -78,7 +77,7 @@
 %
 
 %% Use these lines for letter-sized paper
-\usepackage[paper=letterpaper,
+\usepackage[paper=a4paper,
             %includefoot, % Uncomment to put page number above margin
             marginparwidth=1.2in,     % Length of section titles
             marginparsep=.05in,       % Space between titles and text
@@ -120,6 +119,9 @@
 %
 %   at the place where you want the numbering to reset.
 
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
 \makeatletter
 \newlength{\bibhang}
 \setlength{\bibhang}{1em}
@@ -149,7 +151,7 @@
 %
 \usepackage{fancyhdr,lastpage}
 \pagestyle{fancy}
-%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\pagestyle{empty}      % Uncomment this to get rid of page numbers
 \fancyhf{}\renewcommand{\headrulewidth}{0pt}
 \fancyfootoffset{\marginparsep+\marginparwidth}
 \newlength{\footpageshift}
@@ -210,7 +212,7 @@
 % Usage: \section{section name}
 \renewcommand{\section}[1]{\pagebreak[3]%
     \hyphenpenalty=10000%
-    \vspace{1.3\baselineskip}%
+    \vspace{1.0\baselineskip}%
     \phantomsection\addcontentsline{toc}{section}{#1}%
     \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
     \vspace{-\baselineskip}\par}
@@ -322,6 +324,8 @@
 \begin{document}
 \makeheading{Resume: Khoi-Nguyen Tran}
 
+\halfblankline
+
 \section{Contact}
 
 % NOTE: Mind where the & separators and \\ breaks are in the following
@@ -342,32 +346,42 @@
 %
 \begin{tabular}[t]{@{}p{\textwidth-\rcollength-\spacewidth}@{}p{\spacewidth}@{}p{\rcollength}}%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Address box
 \parbox{\textwidth-\rcollength-\spacewidth}{%
-IBM Research\\
-60 City Road,\\
-Southbank, VIC 3006,\\
+%Postdoctoral Researcher\\
+IBM Research Australia\\
+%Level 22, 60 City Road\\
+Melbourne, VIC 3006\\
 Australia}
 
 % Cheesy perforated vertical bar between boxes
 % Shorten by removing \spacechar's
-& \parbox{\spacewidth}{\centering \spacechar\\\spacechar\\\spacechar\\\spacechar\\\spacechar} &
+& \parbox{\spacewidth}{\centering \spacechar\\\spacechar\\\spacechar\\\spacechar} &
 
 % Non-snail-mail contact information
 \parbox{\rcollength}{%
-\textit{Mobile:} +61 424 316 544\\
+\textit{Mobile:} +61 424 316 544 \\
 \textit{Email:} \email{kndtran@gmail.com}\\
-\textit{WWW:} \href{http://kndtran.com/}{kndtran.com}}
+%\textit{Email:} \email{khndtran@au1.ibm.com}\\
+\textit{WWW:} \href{https://kndtran.github.io/}{kndtran.github.io}}
 
 \end{tabular}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Date of Birth}
+
+%5 October 1987
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\section{Citizenship}
 
@@ -393,215 +407,154 @@ Australia}
 % \item More information and auxiliary documents can be found at\\\url{http://www.tedpavlic.com/facjobsearch/}
 % \end{innerlist}
 
-\halfblankline
+\section{Objective}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+To apply my research skills in industry by developing practical AI solutions for business.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Research Interests}
+
+%\textbf{Detection of malicious activities in online environments:} data mining, machine learning, big data, knowledge generation, vandalism on Wikipedia, malicious spam emails, and current trends and issues in cybercrime.
+
+\section{Research Interests}
+
+Data Science, Machine Learning, Deep Learning, Text Mining, AI for Business, Cyber-security.
+
+%\textbf{Knowledge generation models for online social collaborative environments:} knowledge sources, data mining, machine learning, scalable and distributed algorithms, Web based semantics, knowledge generation, citations, conflicts on the Web, real time analytics, and user interfaces.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Employment}
 
-\href{http://www.research.ibm.com/labs/australia/}{\textbf{IBM Research -- Australia}}\\
-Melbourne, VIC, Australia
+\textbf{IBM Research Australia}
 
-\begin{outerlist}
-	\item Postdoctoral Researcher. Cognitive Analytics Group. \hfill {2016 -- Current}
+\halfblankline
+
+\begin{innerlist}
+	\item Research Scientist. Cognitive Analytics. \hfill {2018 -- Current}
+	%\item[] Cognitive Industries
 	\begin{innerlist}
-		\item[$-$] Led development of research components on understanding text in PDF documents for chunking and learning objective generation.
-		\begin{innerlist}
-			\item[$*$] Delivered 3 web based apps/demos in the IBM Cloud.
-			% to the client and software teams, for use by the sales team, data science team, and SME team.
-			\item[$*$] Delivered and maintained Java and Python software packages for production system integration.
-			% for the software engineering team's integration into the production system.
-			\item[$*$] Research team was recognised as providing leading expertise on development.
-			\item[$*$] 1 research publication under review.
-		%\item[$-$] Developing an end-to-end research based classification system for detecting vandalism on Wikipedia, incorporating traditional feature engineering techniques and exploring deep learning techniques.
-		\end{innerlist}
-		\item[$-$] Exploring machine/deep learning applications for the Education Library, focusing on document classification and alignment of text content to learning standards.
-		\begin{innerlist}
-			\item[$*$] Delivered 2 Java software packages, wrapping past research code for production.
-			% level system with parallelism and simplified execution.
-			\item[$*$] Developing one Python web service to improve 
-			%using supervised learning to improve the search in the unsupervised learning algorithm.
-		\end{innerlist}			
+    \item[$-$] Leading research into understanding patents using text mining and machine learning. Coordinating research tasks amongst 5 people in 3 teams with mixed development in R, Python, Spark, and React.
+    \item[$-$] Led development of end-to-end machine learning and chatbot proof-of-concept pipelines for financial services clients.
+    %\item[$-$] Leading research into machine understanding of USPTO patents. Ongoing and expected outputs are analytical tools using text mining, NLP, machine learning, and deep learning methods, with UIs and APIs to aid inventors and evaluators in their invention review process.
+    %\item[$-$] Led a client project on prediction of human effort in asset creation for business processes. Features end-to-end machine learning pipelines with a graph representational model using structured data, and focusing on (multi-core) parallelism and extensibility in hyper-parameter search.
+		%\item[$-$] Led development of an online chatbot service proof-of-concept for collecting financial documents for analysis. Features background coordination methods with Watson Assistant services for triggering front-end UI functionalities.
+    %\item[$-$] Developed text analytics pipelines for clients in Watson Studio and Anaconda.
+    %\item[$-$] Other research work includes analysis of USPTO patents and detection of malicious URLs.
+    %\item[$-$] Contributed to research on malicious domain detection using only text.
+    %\item[$-$] Publications: 2 pending review.
+    %\item[$-$] Patents: 3 filed. Reached 1st plateau.
+    %\item[$-$] Defensive Patent Publications: 5 published.
+		\item[$-$] 2 publications under review. 3 patents filed. 5 defensive patent publications.
+  \end{innerlist}
+
+  \halfblankline
+
+	\item Postdoctoral Research Scientist. Cognitive Analytics. \hfill {2016 -- 2018}
+	%\item[] Cognitive Industries
+	\begin{innerlist}
+    \item[$-$] Led development of document chunking and end-to-end machine learning solutions for Watson Education. Document chunking is now one of the core features of an IBM offer (C3 -- http://microsite-us.mybluemix.net/).
+    \item[$-$] Identified problems with Watson Education's inherited research assets and developed solutions meeting their production needs of high prediction scores, parallelization, and micro-service APIs.
+    %\item[$-$] Manager: Dr. Christopher J. Butler.
+    %\item[$-$] Developed document chunking solutions and classification models for IBM Global Process Services (for Watson Education). Research work recognized as division led expertise and was part of an A-level accomplishment. Document chunking is now one of the core features of an IBM offer (C3 -- http://microsite-us.mybluemix.net/).
+    %\item[$-$] Developed various end-to-end machine/deep learning solutions for unstructured text data for Watson Education. Particularly, document classification to improve unsupervised document alignment models.
+    %\item[$-$] Transitioned inherited research assets from Watson Education into production ready API services deployed on the IBM Cloud. Replicated and improved original published state-of-the-art research results. Simplified and parallelized assets for scalable generation of document alignment models.
+    %\item[$-$] Contributed to the development of a novel deep learning architecture for geolocation of Twitter tweets.
+    %\item[$-$] Developed end-to-end machine learning solutions for internal business units, from concept to production ready packages.
+		%\item[$-$] Developed techniques for chunking documents and generating learning objectives. Work recognised as division led expertise.
+		%\item[$-$] Transitioned and improved past research components for business teams, introducing a new machine learning component and validation experiments, simplifying and parallelizing execution pipelines, and standardizing APIs for access with JARs and RESTful services.
+		%\item[$-$] Other research work includes geolocation of Twitter tweets, detecting vandalism on Wikipedia, and predicting the price of an item.
+		%\item[$-$] Publications: \cite{Lau2017}, \cite{Tran2018}.
+    %\item[$-$] Patents: 2 filed. %\cite{Tran2018a} (pending), \cite{Tran2018b} (pending).
+    %\item[$-$] Defensive Patent Publications: 3 published.
+		\item[$-$] 2 publications. 2 patents filed. 3 defensive patent publications.
+  \end{innerlist}
 \end{innerlist}
-\end{outerlist}
 
 \halfblankline
 
-\href{http://www.australia.gov.au/}{\textbf{Australian Federal Government}}\\
-Melbourne, VIC, Australia
+\halfblankline
 
-\begin{outerlist}
+\textbf{Australian Federal Government}
+
+\halfblankline
+
+\begin{innerlist}
 	\item Data Scientist. Research and Development Team. \hfill {2015 -- 2016}
-	%\begin{innerlist}
-		%\item[$-$] Led development of advanced profiling techniques in collaboration with senior data analysts and data engineers.
-		%\item[$-$] Revised production profiling scripts for correctness and reimplementation into a new production system.
-		%\item[$-$] Lead writer and investigator of one of four reports into the data quality issues in production databases.
-  %\end{innerlist}
-\end{outerlist}
+	%\item[] Cognitive Industries
+	\begin{innerlist}
+		\item[$-$] Developed modelling, profiling, and text analytics solutions for analysts in R and SQL.
+  \end{innerlist}
+\end{innerlist}
 
 \halfblankline
 
-\href{http://www.anu.edu.au/}{\textbf{The Australian National University (ANU)}}\\
-Canberra, ACT, Australia
+\halfblankline
 
-\begin{outerlist}
-	\item Co-founder and Research Assistant. \href{http://sociology.cass.anu.edu.au/centres/anu-cybercrime}{ANU Cybercrime Observatory.} \hfill {2013 -- 2015}
+\textbf{Australian National University}
+
+\halfblankline
+
+\begin{innerlist}
+	\item Research Assistant \& Co-founder. Cybercrime Observatory. \hfill {2013 -- 2015}
 	\begin{innerlist}
-		%\item[$-$] Project: \textit{Tracking Cybercrime Activities in Australia}
-		\item[$-$] Led research into detecting spam emails with malicious attachments or URLs.
-		\item[$-$] First author full paper publication in AusDM (2013).
-		%\item[$-$] Provided technical expertise on generating statistics and deep data analysis of multiple spam email data sources.
-		%\item[$-$] Managed data security and computer systems for research.
-		%\item[$-$] Significant contributions to an ethics proposal for a research project on people's susceptibility to cybercrime.
-		%\item[$-$] Developed novel detection technique for malicious content based on email content.
-		%\item[$-$] Applied technique and other analyses to over 13 million spam emails, consisting of over 1 million attachments and over 21 million URLs.
-		%\item[$-$] Full paper publication in AusDM (2013).
-    \end{innerlist}
-	
-	\halfblankline
-	
-	\item Research Assistant. \href{http://cs.anu.edu.au/}{Research School of Computer Science.} \hfill {2011}
-	\begin{innerlist}
-		%\item[$-$] Project: \textit{Preference Elicitation for Social Recommendation}
-		\item[$-$] Led development of a Facebook app (\href{http://linkr.anu.edu.au}{http://linkr.anu.edu.au}) to collect user data for research into collaborative filtering for recommendation tasks.
-		\item[$-$] Co-authored full paper publication in WWW (2012).
-		%\item[$-$] Recruited and supported over 200 participants in a 5 month user study.
-		%\item[$-$] Collected usage data from over 37,000 Facebook users.
-		%\item[$-$] Co-authored and presented full paper research publication at the WWW 2012 conference.
+		\item[$-$] Developed machine learning techniques to detect malicious content (attachments or URLs) using only email text.
+		\item[$-$] 1 publication.
 	\end{innerlist}
-\end{outerlist}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\halfblankline
 
-%\section{Programming}
+	\item Research Assistant. Research School of Computer Science. \hfill {2011 -- 2015}
+	\begin{innerlist}
+		\item[$-$] 3 main projects with a publication for each.
+	\end{innerlist}
+\end{innerlist}
 
-%Languages:
-%
-%\begin{innerlist}
-%    \item Experienced: R, Python, SQL, UNIX shell scripting
-%	\item Familiar: Javascript, PHP, Haskell, Java, C, \Matlab
-%\end{innerlist}
-
-% \halfblankline
-
-% Software:
-% %
-% \begin{innerlist}
-    % \item Experienced: dplyr, tidyr, Stanford CoreNLP, Scikit-learn (Python machine learning library), \LaTeX , JQuery, MySQL
-	% \item Familiar: Eclipse, Apache, SVN/Git, Ubuntu Linux, Microsoft Windows XP/7/8, Microsoft Word/Excel/Powerpoint
-% \end{innerlist}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Education}
 
-\href{http://www.anu.edu.au/}{\textbf{The Australian National University (ANU)}}\\
-Canberra, ACT, Australia
+\textbf{Australian National University}
 
-\begin{outerlist}
-\item Ph.D. in Computer Science. \hfill 2015
-	\begin{innerlist}
-		%\item Thesis Topic: \emph{Design and Analysis of Optimal Task-Processing Agents}
-		\item[$-$] Area of Study: Machine learning and its applications
-		\item[$-$] Thesis Title: \emph{Detecting Vandalism on Wikipedia across Multiple Languages}
-		\item[$-$] First author full paper publications in TKDE (2015), PAKDD (2013, 2015 - Best Student Paper), CIKM (2013 - Poster and Demo), and AusDM (2013).
-		%\item[$-$] Developed novel vandalism detection methods based on metadata and text data.
-		%\item[$-$] Demonstrated effective reuse of machine learning models across multiple languages.
-	\end{innerlist}
+\halfblankline
 
-\item Bachelor of Computer Science, with First Class Honours. \hfill 2009
-\end{outerlist}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{comment}
-\section{Service}
-
-\href{http://cs.club.anu.edu.au}{\textbf{ANU Computer Science Students' Association}}
 \begin{innerlist}
-    \item Volunteer, 2007--2010
-	\item President, 2011--2012
+\item Ph.D. in Engineering and Computer Science. \hfill{2010 -- 2015}
 	\begin{innerlist}
-		\item[$-$] Total membership for 2011: 220+, for 2012: 300+.
-		\item[$-$] Notable events: 20+ BBQs, 4 Epic Games Nights, 8 technical talks (incl. Kinect development workshop), 4 software installation events, and 2 membership recruitments.
-		\item[$-$] Winner of ``Event of the Year'' in 2012 for the Epic Games Night.
-		\item[$-$] Runner up for ``Club of the Year'' in 2012.
+		\item[$-$] Thesis Title: \emph{Detecting Vandalism on Wikipedia across Multiple Languages}.
+		\item[$-$] 5 publications, all contributing to thesis.
 	\end{innerlist}
-    \item \href{http://www.microsoftstudentpartners.com/}{Microsoft Student Ambassador}, 2011--2012
+
+\halfblankline
+
+\item Bachelor of Computer Science, with First Class Honors. \hfill{2006 -- 2009}
+	\begin{innerlist}
+		%\item[$-$] GPA: 6.75 / 7. Overall course average of High Distinction.
+		\item[$-$] 5 publications (from honors thesis and individual research projects).
+  \end{innerlist}
 \end{innerlist}
-\end{comment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\section{General Interests}
-%
-%\begin{innerlist}
-%	\item Computer games, card games, board games
-%	\item Cooking, baking bread, growing food, kickboxing, badminton
-%	\item Learning human languages (French, Mandarin Chinese, Spanish, Russian, and German)
-%\end{innerlist}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{References}
 
-Available on request.
+Available upon request.
 
-% \href
-% {http://cs.anu.edu.au/people/Peter.Christen/}
-% {\textbf{Prof.~Peter~Christen}}
-% (email:~\href{mailto:peter.christen@anu.edu.au}{peter.christen@anu.edu.au})
-% %
-% \begin{innerlist}
-	% \item Associate Professor,
-		% \href{http://cs.anu.edu.au/}{Research School of Computer Science}
-	% \item The Australian National University, Canberra, ACT 2601, Australia
-    % \item \emph{Prof.~Christen is my graduate supervisor and panel chair for my PhD candidacy.}
-% \end{innerlist}
+\section{Publication Metrics}
 
-% \halfblankline
+From Google Scholar (Mar 20): 279 citations, h-index: 8, i10-index: 7.
 
-% \href
-% {http://regnet.anu.edu.au/people/professor-roderic-broadhurst}
-% {\textbf{Prof.~Roderic~Broadhurst}}
-% (email:~\href{mailto:roderic.broadhurst@anu.edu.au}{roderic.broadhurst@anu.edu.au})
-% %
-% \begin{innerlist}
-	% \item Professor,
-		% \href{http://cass.anu.edu.au/}{College of Arts and Social Science}
-	% \item The Australian National University, Canberra, ACT 2601, Australia
-    % \item \emph{Prof.~Broadhurst is my supervisor at the ANU Cybercrime Observatory.}
-% \end{innerlist}
+\url{http://scholar.google.com.au/citations?user=ihFcT5QAAAAJ}
 
-
-
-
-
-%\halfblankline
-
-% \href
-% {http://regnet.anu.edu.au/people/dr-mamoun-alazab}
-% {\textbf{Dr.~Mamoun~Alazab}}
-% (email:~\href{mailto:mamoun.alazab@anu.edu.au}{mamoun.alazab@anu.edu.au})
-% %
-% \begin{innerlist}
-	% \item Research Associate,
-		% \href{http://cass.anu.edu.au/}{College of Arts and Social Science}
-	% \item The Australian National University, Canberra, ACT 2601, Australia
-    % \item \emph{Dr.~Alazab was my main supervisor for the project named ``Tracking Cybercrime Activities in Australia''.}
-% \end{innerlist}
-
-%\item[$\diamond$]
 \end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
