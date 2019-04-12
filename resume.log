@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  21 MAR 2019 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.22)  9 APR 2019 15:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -409,29 +409,18 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 439.
 
-Overfull \hbox (2.00914pt too wide) in paragraph at lines 443--453
-[]\OT1/cmr/m/n/10 Led de-vel-op-ment of end-to-end ma-chine learn-ing and chat-
-bot proof-of-concept
- []
-
-
-Overfull \hbox (12.42574pt too wide) in paragraph at lines 506--507
-[]\OT1/cmr/m/n/10 Developed ma-chine learn-ing tech-niques to de-tect ma-li-cio
-us con-tent (at-tach-ments
- []
-
 
 AED: lastpage setting LastPage
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 558.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 558.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 560.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 560.
 
 (./resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 558.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 558.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 558.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 560.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 560.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 560.
  ) 
 Here is how much of TeX's memory you used:
  7484 strings out of 492649
@@ -448,7 +437,7 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on resume.pdf (1 page, 97246 bytes).
+Output written on resume.pdf (1 page, 97683 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
